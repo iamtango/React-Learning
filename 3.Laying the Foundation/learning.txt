@@ -1,0 +1,43 @@
+cdn links make the project slow
+
+npm use to manage all the package
+
+
+npm init => create package.json
+
+npm i -D parcel => it is use to install parcel as devdependencies
+-D means devdependencies only in the Devlopment Environment
+we can install any package without -D that means it for globle Environment
+^ (caret) => Auto upgrade to existing version
+
+
+as soon as any dependencies/devdependencies install then package-lock.json file 
+and node_module folder created
+
+npm i react => to install the react 
+npm i react-dom => to install the react-dom
+
+npx means it execute
+
+npx parcel index.html => is to run the parcel to the entry point
+as soon as hit above command then dist and .parcel-cache folder created
+dist folder keep the file minify for us
+
+npx parcel build index.html => is to run the parcel and make the project production build
+and it will minifyall the dile into the dist folder
+
+
+Polyfill =>is nothing but the code which is replacement for the newer version of the code 
+(converting the code to the older version of the browser is Called Bable)
+
+
+## Q: How can u build perfomant web scalable app?
+A: There are so many things React optimise do it for us and so many things bundlers gives us
+    whole app is the combination of these 2 things.
+
+
+npm i -D  babel-plugin-transform-remove-console => remove the console.logs 
+in the dist folder which help to minify the code
+
+
+https://legacy.reactjs.org/docs/reconciliation.html
