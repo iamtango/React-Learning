@@ -26,24 +26,60 @@
     import React from "react"
     import  ReactDOM   from "react-dom/client"
 
-    const heading = React.createElement("h1",{
-        id:"title ",
-        key:"h1"
-    },"Hello Everyone here we are its my first!!");
-    //React.createElement => Object =>HTML(DOM)
 
-    const heading2 = React.createElement("h2",{
-        id:"title2 ",
-        key:"h2" 
-    },"Hello Everyone here we are second time!");
-    console.log(heading)
+     // //React.createElement => Object =>HTML(DOM)
+
+    // const heading = React.createElement("h1",{
+    //     id:"title ",
+    //     key:"h1"
+    // },"Hello Everyone here we are its my first!!");
+      
+    // const heading2 = React.createElement("h2",{
+    //     id:"title2 ",
+    //     key:"h2"                //key props use to remove the warning and it should be unique
+    // },"Hello Everyone here we are second time!");
+    // console.log(heading)
      
-    const heading3 = React.createElement("h2",null,"!");
-    console.log(heading)
+    // const heading3 = React.createElement("h2",null,"!");
+    // console.log(heading)
 
-    const container = React.createElement("div",{
-        id:"container"
-    },[heading,heading2])
+
+    // // its so pain 
+    // const container = React.createElement("div",{
+    //     id:"container"
+    // },[React.createElement("h1",
+    //     {
+    //         id:"title ",
+    //         key:"h1"
+    //     },"Hello Everyone here we are its my first!!"),
+    //     React.createElement("li",{},"Hello Everyone Li!!"),
+    //     React.createElement("li",{},"About US!!"),
+    //     React.createElement("li",{},"About US2 !!")])
+
+
+    //  const heading = React.createElement("h1",{
+    //     id:"title ",
+    //     key:"h1"
+    // },"Hello Everyone here we are its my first!!");
+
+    const heading = <h1 id="title" key="h">Namaste React</h1>
+
+
+    // React Compnent
+    // Functional  it is NEW
+    //  class based component it is OLD
+
+    const HeaderComponent = () => ( 
+    <div> 
+        {heading}
+        <h1>Namaste React1 </h1>
+        <h2>Namaste React2</h2>
+    </div> 
+    )
+
+
 
     const root = ReactDOM.createRoot(document.getElementById("root"))
-    root.render(container)
+    // root.render(heading)
+
+    root.render(<HeaderComponent/>)
