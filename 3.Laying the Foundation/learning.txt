@@ -38,6 +38,35 @@ A: There are so many things React optimise do it for us and so many things bundl
 
 npm i -D  babel-plugin-transform-remove-console => remove the console.logs 
 in the dist folder which help to minify the code
-
+.babelrc is use for babel configuration.
 
 https://legacy.reactjs.org/docs/reconciliation.html
+
+render means updating something into the dom
+
+
+JSX its use the html inside the js
+
+## Q: what is JSX?
+ A: JSX is the html like syntax but it is not html inside js
+
+ jsx use React.createElement behind the scene  JSX => React.createElement => Object =>HTML(DOM)
+babel understand JSX
+
+babel is the compiler next generation js 
+
+
+
+    // React Compnent
+    // Functional  it is NEW
+    //  class based component it is OLD
+
+   ## Q: what is functional component 
+      A: it is nothing but the function that return some piece of jsx or react element 
+
+
+Write name of the component start with capital letter.
+
+JSX is very Secure 
+
+nested component is called component composition
