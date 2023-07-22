@@ -77,7 +77,7 @@ using React.Fragment is looks so ugly so instead of that write empty <> </>
 
 <React.Fragment> < /React.Fragment> === <></>
 
-Config Driven UI
+*****   Config Driven UI   *****
 
 
 Virtual DOM is just not the concept of the react but the concept of the Software Engg concept and react also use it
@@ -85,4 +85,30 @@ Virtual DOM is just not the concept of the react but the concept of the Software
 Virtual DOM => Keeping the reperesntetion of the dom with us.
 
 ## Q:Why we need Virtual DOM?
-   A: It needed for Reconciliation
+   A: It needed for Reconciliation uses diff algo =>it find diff between Trees (it will only reender the specific portion) 
+
+   Key help to react that what need to be Updated
+
+
+React Fiber is the new Reconciliation Engine   
+
+
+Every Compnent in react maintains the state and u can put all the variable into the state 
+
+What is state 
+
+## Q:what is useState?
+    A: It is use to create a state varibales and it comes form react 
+       useState() => it return an array and the first variable of the array is the variable name and second 
+       is the function to upadate the variable
+       syntax :  
+                //local state variable in react
+                
+                const [variableName, setVariableName] =useState("Search"); //use the text in param 
+
+
+React says Every time u need ur varibale to be sync with UI Use useState variable. 
+
+
+## Q:what is React hooks? 
+    A: it is nothing but the normal function, the are so many hooks and one of the hook we use is useState hook
