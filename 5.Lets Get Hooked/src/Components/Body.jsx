@@ -38,8 +38,7 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {restaurants.map((restaurant) => { <RestaurantCard key={restaurant.data.id} {...restaurant.data} />;
-        })}
+        {restaurants.map((restaurant) => { <RestaurantCard key={restaurant.data.id} {...restaurant.data} />; })}
       </div>
     </>
   );
