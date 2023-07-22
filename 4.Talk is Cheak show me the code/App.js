@@ -31,7 +31,7 @@
     const Header = () => ( 
     <div className="header"> 
         < Title />
-        <div className="nav-item">
+        <div className="nav-items">
             <ul>
                 <li>Home</li>
                 <li>About us</li>
@@ -1898,7 +1898,7 @@ const RestaurantCard = ({
 // We are mapping restaurantList array and passing data to
 // RestaurantCard component as props with unique key as index
     const Body =() => (
-    <div className="Resturant-List">
+    <div className="Restaurant-list">
          {restaurantList.map((restaurant) => {
         return <RestaurantCard key={restaurant.data.id} {...restaurant.data} />;
       })}

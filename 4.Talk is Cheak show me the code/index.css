@@ -1,4 +1,4 @@
-/* Select all CSS */
+    /* Select all CSS */
 *{
     margin: 0;
     padding: 0;
@@ -38,18 +38,16 @@
     padding: 40px 10px 0 0;
     font-size: large;
     cursor: pointer;
-    justify-content: space-between;
 }
 
 
 /* Body CSS */
 
-.restaurant-list{
-    /* width: auto; */
+.Restaurant-list{
+    width: auto;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:center; */
-
+    justify-content:center;
 }
 
 .card{

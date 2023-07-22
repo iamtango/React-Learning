@@ -85,6 +85,4 @@ Virtual DOM is just not the concept of the react but the concept of the Software
 Virtual DOM => Keeping the reperesntetion of the dom with us.
 
 ## Q:Why we need Virtual DOM?
-   A: It needed for Reconciliation and reconciliation uses 'Diff Algo' => it find the diff between trees
-   and it will only rerender the specific and necessary tree/code from the app
-
+   A: It needed for Reconciliation
