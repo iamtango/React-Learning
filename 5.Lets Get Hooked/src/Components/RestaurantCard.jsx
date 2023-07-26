@@ -1,7 +1,6 @@
-import { IMG_CDN_URL } from "../constants";
+import { IMG_URL } from "../constants";
 
-// Restaurant card component: Image, name, cuisine
-
+    
 // Restaurant card component: Image, name, cuisine
 const RestaurantCard = ({
     cloudinaryImageId,
@@ -9,15 +8,13 @@ const RestaurantCard = ({
     cuisines,
     area,
     lastMileTravelString,
-    costForTwoString,
+    costForTwoString,   
     avgRating,
-    }) => {
+  }) => {
     return (
       <div className="card">
         <img
-          src={
-            IMG_CDN_URL + cloudinaryImageId
-          }
+          src={ IMG_URL +cloudinaryImageId }
         />
         <h2>{name}</h2>
         <h4>{cuisines.join(", ")}</h4>
@@ -29,6 +26,6 @@ const RestaurantCard = ({
         </span>
       </div>
     );
-    };
-
-export default RestaurantCard;
+  };
+  
+export default RestaurantCard

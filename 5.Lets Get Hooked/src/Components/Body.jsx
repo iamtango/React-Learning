@@ -1,47 +1,53 @@
+import { useState } from "react";
 import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
-import { useState } from "react";
 
-function filterData(searchText, restaurants) {
-  const filterData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase())
-  );
-  return filterData;
+
+
+function filterData(searchText,restaurants){
+
+  return restaurants.filter((restaurant)=>restaurant.data.name.includes(searchText) )
+
 }
 
-// Body Component for body section: It contain all restaurant cards
-// We are mapping restaurantList array and passing JSON data to RestaurantCard component as props with unique key as index
-const Body = () => {
-  // useState: To create a state variable, searchText is local state variable
-  const [searchText, setSearchText] = useState("");
-  const [restaurants, setRestaurants] = useState(restaurantList);
-  return (
-    <>
-      <div className="search-container">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Search a restaurant you want..."
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        ></input>
-        <button
-          className="search-btn"
-          onClick={() => {
-            // filter the data
-            const data = filterData(searchText, restaurants);
-            // update the state of restaurants list
-            setRestaurants(data);
-          }}
-        >
-          Search
-        </button>
-      </div>
-      <div className="restaurant-list">
-        {restaurants.map((restaurant) => { <RestaurantCard key={restaurant.data.id} {...restaurant.data} />; })}
-      </div>
-    </>
-  );
-};
 
-export default Body;
+ // Body Component for body section: It contain all restaurant cards
+// We are mapping restaurantList array and passing data to
+// RestaurantCard component as props with unique key as index
+const Body =() => {
+  
+    const [searchTxt , setSearchTxt] =useState();// to create the state variable
+    const [restaurants, setRestaurants] =useState(restaurantList);
+
+  return( 
+    <>
+    <div className="search-container">
+      <input type="text" 
+            className="search-input"
+            placeholder="Search"
+            value={searchTxt} 
+            onChange={(e)=>{
+              setSearchTxt(e.target.value);
+            }}
+            />
+      <button className="search-btn" 
+              onClick={()=>{
+                //need to filter the data
+                // Updating the state - restaurants
+                const data = filterData(searchTxt, restaurants);
+
+                //update the state -restaurants
+                setRestaurants(data); 
+
+              }} >Search</button>
+      {/* <p>{ searchTxt}</p> */}
+    </div>
+    <div className="restaurant-list">
+         {restaurants.map((restaurant) => {
+        return <RestaurantCard key={restaurant.data.id} {...restaurant.data} />;
+      })}
+    </div>
+    </>
+    )};
+
+export default Body;    

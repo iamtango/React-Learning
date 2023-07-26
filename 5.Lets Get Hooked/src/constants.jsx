@@ -1,10 +1,7 @@
-// Image CDN URL for Restaurant card
-export const IMG_CDN_URL =
-  "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-
+export const IMG_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
 
 // RestaurantList is JSON Data for displaying cards
-const restaurantList = [
+export const restaurantList = [
     {
       type: "restaurant",
       data: {
@@ -1820,5 +1817,4 @@ const restaurantList = [
       },
       subtype: "basic",
     },
-    ];
-    
+  ]

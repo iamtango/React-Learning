@@ -43,7 +43,7 @@
 
 /* Body CSS */
 
-.Restaurant-list{
+.restaurant-list{
     width: auto;
     display: flex;
     flex-wrap: wrap;

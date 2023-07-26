@@ -1,3 +1,4 @@
+# React-Learning
 cdn links make the project slow
 
 npm use to manage all the package
@@ -99,8 +100,7 @@ What is state
 
 ## Q:what is useState?
     A: It is use to create a state varibales and it comes form react 
-       useState() => it return an array and the first variable of the array is the variable name and second 
-       is the function to upadate the variable
+       useState() => it return an array and the first variable of the array is the variable name and second is the function to upadate the variable
        syntax :  
                 //local state variable in react
                 
@@ -110,7 +110,6 @@ What is state
 React says Every time u need ur varibale to be sync with UI Use useState variable. 
 
 
-##  Q:what is React hooks? 
+## Q:what is React hooks? 
     A: it is nothing but the normal function, the are so many hooks and one of the hook we use is useState hook
-
 
