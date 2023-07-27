@@ -1,0 +1,32 @@
+{
+  "name": "5.lets-get-hooked",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamtango/React-Learning.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamtango/React-Learning/issues"
+  },
+  "homepage": "https://github.com/iamtango/React-Learning#readme",
+  "description": ""
+}
