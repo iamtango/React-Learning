@@ -114,3 +114,35 @@ React says Every time u need ur varibale to be sync with UI Use useState variabl
     A: it is nothing but the normal function, the are so many hooks and one of the hook we use is useState hook
 
 
+
+In the Reconciliation process there is the Diff algo use in it >>> React Fiber is the new reconciliation algorith   
+
+rerender the component every time when useState Varibale calls
+
+ ## Q: Why React is Fast ?
+    A: because of the fast dom manupulation, Whenever any changes happened in the state then its Quickly rerender everything (everytimes).
+----------------------------xxxxxxxxx----------------------------
+
+
+** Monolith  >> whole project deploy uding 1 repo
+## Q: Microservice  Advantages
+    A: Diffrent projects all together,  Easy to maintain ,Sepration of concern , no need to depend on some specific Lang.
+
+-------------xxxxxxxx-------------
+
+2. @Hook >> useEffect Hook > it comes from react Lib
+
+    us can call the function by passing another function in to it and another fuction is CALLBACK function
+
+    use can calll the useEffect() by giving 2 params they are CALLBACK and DEPENDENCY ARRAY.
+    if we pass anything into the dependency array then everytime the value is use the useEffect is call
+    It is the best place to make API call
+
+    by default it will be call once after render 
+
+
+    ## optional Chaining >> if data  not presend in the perticualr place it help to not get and error
+
+    ## Shimmer  effect  which resembless the actual page's UI
+
+    bydefault the length of the page is 0

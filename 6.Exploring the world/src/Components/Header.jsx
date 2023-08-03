@@ -1,4 +1,5 @@
 import { useState } from "react";
+
    
    // Title component for display logo
    const Title = () => (
@@ -9,7 +10,6 @@ import { useState } from "react";
     </a>
     );
 
-   
 // Header component for header section: Logo, Nav Items
 const Header = () => {
     // use useState for user logged in or logged out

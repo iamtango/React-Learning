@@ -249,15 +249,21 @@ rerender the component every time when useState Varibale calls
 
 -------------xxxxxxxx-------------
 
+# Hooks start with use
+we can use hooks by simply calling them
+
+
 2. @Hook >> useEffect Hook > it comes from react Lib
 
     us can call the function by passing another function in to it and another fuction is CALLBACK function
 
     use can calll the useEffect() by giving 2 params they are CALLBACK and DEPENDENCY ARRAY.
     if we pass anything into the dependency array then everytime the value is use the useEffect is call
-    It is the best place to make API call
+   # It is the best place to make API call
 
-    by default it will be call once after render 
+    by default it will be call once after components render 
+
+    and if we dont pass any thing in the useEffect hook apart from the callback function it will call every time when the component renders, if we pass dependency arry then it will call only once after render 
 
 
     ## optional Chaining >> if data  not presend in the perticualr place it help to not get and error
@@ -265,3 +271,43 @@ rerender the component every time when useState Varibale calls
     ## Shimmer  effect  which resembless the actual page's UI
 
     bydefault the length of the page is 0
+------------------xxxxxxxxxxxxxxxxx------------------
+
+ Don't create (Functional) component inside component, otherwise it will call alot of times
+
+ # Never write your useState Inside the IF..Else or also in Forloop
+
+# react gives useState hook to use as local variable inside functional component
+## @Never use usestate outside of functional component   
+
+# CDN is the optimalway to store images because it is fast
+-----------------xxxxxxxxxxxxxxxxxx-----------------
+
+# createBrowserRouter it comes from  react-router-dom help to create routing{route to perticular page }    it takes some configuration(Array){which is the list of path}
+
+
+# RouterProvider it comes from  react-router-dom help to create routing 
+root.render rnders whatever u gave so if u want to render acccordingly then use RouterProvider 
+ Syntax:
+        root.render(<RouterProvider router={createBrowserRouter_const_name}>)
+
+        
+
+## SPA - Single Page Application
+
+## There are 2 types of routing
+ 1.Client-side routing
+ 2.Server-side routing =>it is a way that all pages comes from server
+
+# Links are the another component comes from  react-router-dom help to create routing 
+
+# if want to route to another page but also wanted SPA then Import Link  from react-router-dom
+# and it is alternative of anchor tag, anchor tag reload the whole page while Link does SPA
+
+# at the end Link Compoent uses anchor tag behind the scenes
+
+if u have to create nested route u have to create Outlets it comes from react-router-dom
+help to keep changing according to the routes
+# all the children written in the createBrowserRouter goes into the outlet
+
+# useParams is another hook it is use to read the dinamic url parameters
