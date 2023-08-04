@@ -5,10 +5,10 @@ import { swiggy_api_URL } from "../constants";
 
 // Filter the restaurant data according input type
 function filterData(searchText, restaurants) {
-  const filterData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase())
+  const resFilterData = restaurants.filter((restaurant) =>
+    restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase())
   );
-  return filterData;
+  return resFilterData;
 }
 
 // Body Component for body section: It contain all restaurant cards
@@ -87,7 +87,7 @@ const Body = () => {
           {/* We are mapping restaurants array and passing JSON array data to RestaurantCard component as props with unique key as restaurant.data.id */}
           {filteredRestaurants.map((restaurant) => {
             return (
-              <RestaurantCard key={restaurant.data.id} {...restaurant.data} />
+              <RestaurantCard {...restaurant.data} key={restaurant.data.id}  />
             );
           })}
         </div>

@@ -311,3 +311,17 @@ help to keep changing according to the routes
 # all the children written in the createBrowserRouter goes into the outlet
 
 # useParams is another hook it is use to read the dinamic url parameters
+
+----------------XXXXXXXXXXXXX----------------
+## Q: * Class Based Components *
+   A: It is the easrlier concept it introduce before Hooks and it is very hard to wirte code in early time.
+   It is kind of Depricated menthod its alternative is Functional Component
+
+   we can create classbased compoent with the help of class keyword and extends React.Component and React.component comes from react 
+   syntax :  class <className> extends React.Component
+   most imp part of the classbased compoent is @Render Method it help to return some JSX code just like functional component
+
+   componentDidMount is the method in the classbased component which is the best place to call the API and it will be call after first render
+   Constructor >> Render >> componentDidMount
+
+componentDidUpdate it will call after every next render
