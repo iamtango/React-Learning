@@ -325,3 +325,44 @@ help to keep changing according to the routes
    Constructor >> Render >> componentDidMount
 
 componentDidUpdate it will call after every next render
+
+componentWillUnmount use for "cleanUp"
+
+
+
+======================================================================================================
+
+# Building our Own Hooks
+it is use for useablability, readablelity, easy to maintain
+
+whenever create any hook always  make new file and file name start with use 
+
+# useState Returns >> target
+
+there is one event listner call Online which help to show the user is offline or not
+and is u use any event listner u must need to clean all the event listner because if u use another listner and then back to that normal listner then the new event listner is being call so use "Unmounting"
+
+# Q: How many JS /JSX file parcel produce?
+  A: Only one
+
+# One one js file created by bundle but it is bigger projects and has more than 100 components then one-bundle break ur code
+so u have to splitting the code or make it in small chunks or "OnDemand Loading"
+
+JUst like useState react also give us lazy which is help for lazy loading it take a function and useful for dynamic import or lazy import
+and it is use to create another bundler which help for  code chunking
+Syntax: 
+        const VARNAME = lazy( ( ) => import("Relative Path") )
+
+
+
+react will try to render the things which is not in there so it gives an error so it will suspend the operation
+# When u r loading the component on demand react try to sunspend it
+Upon OnDemand LOading -> Upon Render -> Suspend Loading
+So to avoid the error it uses another component call suspense component and put another component in between
+and if the component take long time to load into the app then suspense use props called fallback 
+Syntax : 
+            <Suspense fallback={<Shimmer />}> 
+            <Instamart />
+            <Suspense/>
+
+## @Naever Ever Dynamically load ur component into the the Another Component            
