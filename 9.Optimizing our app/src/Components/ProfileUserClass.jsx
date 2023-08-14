@@ -1,41 +1,37 @@
-import { IMG_CDN_URL } from "../constants";
+import { Component } from "react";
+import SocialProfileClass from "./SocialProfileClass";
 
-// Restaurant card component: Image, name, cuisine
-const RestaurantCard = ({
-  cloudinaryImageId,
-  name,
-  cuisines,
-  areaName,
-  sla,
-  costForTwo,
-  avgRatingString,
-}) => {
-  return (
-    <div className="card">
-      <img src={IMG_CDN_URL + cloudinaryImageId} />
-      <h3>{name}</h3>
-      <h5>{cuisines.join(", ")}</h5>
-      <h5>{areaName}</h5>
-      <span>
-        <h4
-          style={
-            avgRatingString < 4
-              ? { backgroundColor: "var(--light-red)" }
-              : avgRatingString === "--"
-                ? { backgroundColor: "white", color: "black" }
-                : { color: "white" }
-          }
-        >
-          <i className="fa-solid fa-star"></i>
-          {avgRatingString}
-        </h4>
-        <h4>•</h4>
-        <h4>{sla?.lastMileTravelString ?? '2.0 km'}</h4>
-        <h4>•</h4>
-        <h4>{costForTwo ?? '₹200 for two'}</h4>
-      </span>
-    </div>
-  );
-};
+class ProfileUserClass extends Component {
+  constructor(props) {
+    super(props);
+    // console.log("ProfileUserClass child constructor");
+  }
+  
+  componentDidMount() {
+    // console.log("ProfileUserClass child componentDidMount");
+  }
+  componentDidUpdate() {
+    // console.log("ProfileUserClass child componentDidUpdate");
+  }
+  componentWillUnmount() {
+    // console.log("ProfileUserClass child componentWillUnmount");
+  }
+  render() {
+    const { name, avatar_url, bio } = this.props.data; // accessing full json data as props from parent class `ProfileClass`
+    // console.log("ProfileUserClass child render");
+    return (
+      <div className="profile-user-card">
+          <img
+            className="profile-user-img"
+            src={avatar_url}
+            alt={name}
+            title={name}
+          />
+          <p className="profile-user-bio">{bio}</p>
+          <SocialProfileClass />
+      </div>
+    );
+  }
+}
 
-export default RestaurantCard;
+export default ProfileUserClass;
