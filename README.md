@@ -374,4 +374,4 @@ Syntax :
             <Instamart />
             <Suspense/>
 
-# @Never Ever Dynamically load ur component into the the Another Component            
+# Never Ever Dynamically load ur component into the the Another Component            
