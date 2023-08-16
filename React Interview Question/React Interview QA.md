@@ -1153,7 +1153,7 @@ function MyComponent() {
   return <Button>Click me!</Button>;
 }
 ```
-
+ 
 One advantage of Styled Components is that it helps to keep your styles organized and modular. Instead of having a separate CSS file for each component, you can define the styles directly within the component itself. This can make it easier to understand and maintain your code, as everything related to the component is kept in one place.
 
 Styled Components also allows you to easily customize your styles based on props passed to the component, and to define complex styles using standard CSS syntax.
