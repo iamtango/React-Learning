@@ -262,7 +262,7 @@ rerender the component every time when useState Varibale calls
 
 
 ** Monolith  >> whole project deploy uding 1 repo
-## Q: Microservice  Advantages
+# Q: Microservice  Advantages
     A: Diffrent projects all together,  Easy to maintain ,Sepration of concern , no need to depend on some specific Lang.
 
 -------------xxxxxxxx-------------
@@ -284,22 +284,21 @@ we can use hooks by simply calling them
     and if we dont pass any thing in the useEffect hook apart from the callback function it will call every time when the component renders, if we pass dependency arry then it will call only once after render 
 
 
-    ## optional Chaining >> if data  not presend in the perticualr place it help to not get and error
+    # optional Chaining >> if data  not presend in the perticualr place it help to not get and error
 
-    ## Shimmer  effect  which resembless the actual page's UI
+    # Shimmer  effect  which resembless the actual page's UI
 
-    bydefault the length of the page is 0
-------------------xxxxxxxxxxxxxxxxx------------------
+    by default the length of the page is 0
 
  Don't create (Functional) component inside component, otherwise it will call alot of times
 
  # Never write your useState Inside the IF..Else or also in Forloop
 
 # react gives useState hook to use as local variable inside functional component
-## @Never use usestate outside of functional component   
+# @Never use usestate outside of functional component   
 
 # CDN is the optimalway to store images because it is fast
------------------xxxxxxxxxxxxxxxxxx-----------------
+
 
 # createBrowserRouter it comes from  react-router-dom help to create routing{route to perticular page }    it takes some configuration(Array){which is the list of path}
 
@@ -311,9 +310,9 @@ root.render rnders whatever u gave so if u want to render acccordingly then use 
 
         
 
-## SPA - Single Page Application
+# SPA - Single Page Application
 
-## There are 2 types of routing
+# There are 2 types of routing
  1.Client-side routing
  2.Server-side routing =>it is a way that all pages comes from server
 
@@ -331,7 +330,7 @@ help to keep changing according to the routes
 # useParams is another hook it is use to read the dinamic url parameters
 
 ----------------XXXXXXXXXXXXX----------------
-## Q: * Class Based Components *
+# Q: * Class Based Components *
    A: It is the easrlier concept it introduce before Hooks and it is very hard to wirte code in early time.
    It is kind of Depricated menthod its alternative is Functional Component
 
@@ -383,4 +382,4 @@ Syntax :
             <Instamart />
             <Suspense/>
 
-## @Naever Ever Dynamically load ur component into the the Another Component            
+# Never Ever Dynamically load ur component into the the Another Component            
