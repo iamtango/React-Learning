@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> b51eea529434a4afb93c7e482f47a0044d20d531
 | S.No | Topic <img width="200px">  | Tags                                               | <img width="50px"> Link <img width="50px"> |
 | :--: | :------------------------- | :------------------------------------------------- | :----------------------------------------: |
 |  1.  | Inception                  | `react` `react-dom` `react element`                |            [ 🔗](1.Inception)             |
