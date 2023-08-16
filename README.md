@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b51eea529434a4afb93c7e482f47a0044d20d531
 | S.No | Topic <img width="200px">  | Tags                                               | <img width="50px"> Link <img width="50px"> |
 | :--: | :------------------------- | :------------------------------------------------- | :----------------------------------------: |
 |  1.  | Inception                  | `react` `react-dom` `react element`                |            [ 🔗](1.Inception)             |
@@ -9,7 +12,11 @@
 |  6.  | Exploring the world        | `useEffect` `conditional rendereing` `shimmer`     |       [ 🔗](6.Exploring%20the%20world)        |
 |  7.  | Finding the path           | `Routing` `create-router-dom` `Formik`             |         [ 🔗](07-finding-the-path)         |
 |  8.  | Let's get Classy           | `class components`                                 |         [ 🔗](8.Lets%20Get%20Classy)          |
+<<<<<<< HEAD
 |  9.  | Optimizing our App         | `custom hooks` `lazy loading`                      |        [ 🔗](9.Optimizing%20our%20app)        |
+=======
+|  9.  | Optimizing our App         | `custom hooks` `lazy loading`                      |        [ 🔗](9.Optimizing%20our%20app)        
+>>>>>>> b51eea529434a4afb93c7e482f47a0044d20d531
 # React-Learning
 cdn links make the project slow
 

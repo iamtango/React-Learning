@@ -1,53 +1,37 @@
-import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
-import food from "../Images/burger-image.png";
+import { Link, Outlet } from "react-router-dom"
 
 const About = () => {
-  const [show, setShow] = useState(false);
   return (
-    <div>
-      <div className="about-profile-container">
-        {/* used ternary condition to Show my profile and Hide my Profile and using nested routing */}
-        {show ? (
-          <>
-          <Link to={"/about"}>
-            <button
-              className="about-profile-button"
-              onClick={() => setShow(false)}
-            >
-              Hide My Profile
-            </button>
-            </Link>
-            <Outlet />
-          </>
-        ) : (
-          <Link to={"profile"}>
-            <button
-              className="about-profile-button"
-              onClick={() => setShow(true)}
-            >
-              Show My Profile
-            </button>
-          </Link>
-        )}
-      </div>
-      <div className="about-container">
-        <div className="about-left">
-          <h1>
-            Welcome to <br /> The world of <br />{" "}
+    <div className="w-[1024px] mx-auto my-4">
+      <h2 className="text-xl font-semibold py-2">About</h2>
+      <h1>
+      Welcome to <br /> The world of <br />{" "}
             <span>Tasty & Fresh Food</span>
           </h1>
           <h4>
             "Better you will feel if you eat a Food<span>Fire</span> healthy
             meal"
           </h4>
-        </div>
-        <div className="about-right">
-          <img src={food} alt="Food Image" />
-        </div>
+      <div className="pt-4">
+        <h2 className="text-red-500 text-large font-medium mb-2">Nested Component</h2>
+        <p>
+          Go to{" "}
+          <Link to="profile" className="text-blue-900">
+            Profile
+          </Link>{" "}
+          [Nested: Functional Component]{" "}
+        </p>
+        <p>
+          Go to{" "}
+          <Link to="profile-class" className="text-blue-900">
+            Profile
+          </Link>{" "}
+          [Nested: Class Component]{" "}
+        </p>
       </div>
+      <Outlet />
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

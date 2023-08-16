@@ -1,3 +1,4 @@
+# Jo Dikhta hai Vo Bikta hai
 # Q: Why we Use Frameworks
   A: 1. to Write optimized css, 2. it saves time
  
@@ -51,7 +52,7 @@
 - less bundle size (minimal css) only includes the css classes that we have used
 - Flexible UI (Customizable)
 
-  PROS: Easy to use, More Reuseablitity.
+  PROS: Easy to use, More Reuseablitit, code is less, no duplicate css, fast time, easy to debug
   CONS: Heavy Bundle Size
 
 It's comes with some predefined configuration and same need to configure in project. Different Framework or library have it's own configuration like parcels and Angular comes with difference configuration. For Detailed knowladge follow the tailwind documentation.
@@ -61,3 +62,64 @@ using cdn links in index.js file
 
 
 Install Tailwindcss Using Parcel
+npm install -D tailwindcss postcss
+npx tailwindcss init >> it make tailwind.config.js
+
+In the tailwind.config.js file "content" array is use so that tailwind know that only these extension file be executed
+
+# postcssrc we have to create so that our bundler know that we use tailwind css so it can compile
+In short 'it compile Tailwind Css into normal css'
+
+when we write tailwind css we dont write any css in css file just write
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+use extension tailwindcss intellisense
+
+use [] =>Square bracet notesion for the precious or exact value or dynamic value
+example: w-[200px]
+
+# -----------------------------------------------------------------------------------
+
+# Data is the New Oil
+
+UI Layer < Data Layer (UI Layer | Data Layer)
+
+# Q: In UI what does data layer consist of ?
+  A:It Manges by State and props
+
+#   Q: Diffrence Between State And Props ?
+    A: State can be change where Props cannot be change
+        State which in the local variable 
+        Props are somethings whoes value can be pass from one element component to the another
+        Props are kind of local state variable to the parent component
+        # Props is something which is recieving inside the component
+
+# PROPS DRILLING => drilling props from top to bottom level
+
+React dev tools extension in chrome
+showing whole tree in chrome
+
+
+accessing parents property into child is called PROPS Drilling
+and we can access child property by using custom hooks 
+
+# useContext is the normal hook
+# React context is use for piece of data use anywhere in the app and it is normal function
+u can create multiple context in the app
+
+Props And state are tied to the compoent but React Context is not tied to the component
+
+<UserContext.Consumer>
+<UserContext.Provider>
+
+# React routing also  done with the help of context
+
+#only for debugging
+Writing a name to the context provider is good and remove the comfusion if had more context in the app so use
+put the .displayName method
+ex: userConetxt.displayName = "Name_Which_want_to_display";
+
+
