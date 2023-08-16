@@ -10,7 +10,6 @@
 |  7.  | Finding the path           | `Routing` `create-router-dom` `Formik`             |         [ 🔗](07-finding-the-path)         |
 |  8.  | Let's get Classy           | `class components`                                 |         [ 🔗](8.Lets%20Get%20Classy)          |
 |  9.  | Optimizing our App         | `custom hooks` `lazy loading`                      |        [ 🔗](9.Optimizing%20our%20app)        |
-=======
 |  10.  | Jo Dikhta Hai Vo Bikta Hai        | `PROPS DRILLING` `Context`                      |        [ 🔗](10.Jo%20DIkhta%20Hai%20Vo%20Bikta%20hai/)        
 
 # React-Learning
