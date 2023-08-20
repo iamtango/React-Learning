@@ -1,37 +1,48 @@
-import { Link, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import ProfileFunctionalComponet from "./Profile";
+import Profile from "./ProfileClass";
+import { Component } from "react";
 
-const About = () => {
-  return (
-    <div className="w-[1024px] mx-auto my-4">
-      <h2 className="text-xl font-semibold py-2">About</h2>
-      <h1>
-      Welcome to <br /> The world of <br />{" "}
-            <span>Tasty & Fresh Food</span>
-          </h1>
-          <h4>
-            "Better you will feel if you eat a Food<span>Fire</span> healthy
-            meal"
-          </h4>
-      <div className="pt-4">
-        <h2 className="text-red-500 text-large font-medium mb-2">Nested Component</h2>
+class About extends Component {
+  constructor(props) {
+    super(props);
+
+    //console.log("Parent - constructor");
+  }
+  componentDidMount() {
+    // Best place to make an Api call
+    //console.log("Parent - componentDidMount");
+  }
+  render() {
+    //console.log("Parent - render");
+    return (
+      <div>
+        <h1>About Us Page</h1>
         <p>
-          Go to{" "}
-          <Link to="profile" className="text-blue-900">
-            Profile
-          </Link>{" "}
-          [Nested: Functional Component]{" "}
+          This is the Namaste React Live Course Chapter 07 - Finding the Path 🚀
         </p>
-        <p>
-          Go to{" "}
-          <Link to="profile-class" className="text-blue-900">
-            Profile
-          </Link>{" "}
-          [Nested: Class Component]{" "}
-        </p>
+        <Profile />
       </div>
-      <Outlet />
-    </div>
-  )
+    );
+  }
 }
 
-export default About
+export default About;
+
+/**
+ *
+ * Parent Constructor
+ * Parent render
+ *    First Child constructor
+ *    First Child render
+ *    Second Child constructor
+ *    Second Child render
+ *
+ *    DOM UPDATED for children
+ *
+ *    first Child componentDidMount
+ *    Second Child componentDid
+ *  Parent componentDidMount
+ *
+ *
+ */

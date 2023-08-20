@@ -8,11 +8,11 @@ const Contact = () => {
         setMessage(true);
     }
   return (
-    <div className="contact-container">
-      <div className="contact-left">
+    <div className="w-[1024px] mx-auto my-4">
+      <div className="flex left-2">
       <img src={contact} alt="" />
       </div>
-      <div className="contact-right">
+      <div className="text-xl font-semibold py-2">
       <h1>Contact us</h1>
                 <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Name" required/>

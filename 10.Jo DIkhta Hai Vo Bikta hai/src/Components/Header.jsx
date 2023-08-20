@@ -1,67 +1,49 @@
 import { useState } from "react";
 import Logo from "../Images/Logo.png";
-import { Link } from "react-router-dom"; // imported Link for client side routing
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import useOnline from "../Hooks/useOnline";
 
-// Title component for display logo
+// SPA - Single Page Application???
+// Client Side Routing
+
 const Title = () => (
   <a href="/">
-    <img
-      className="logo"
-      src={Logo}
-      alt="Food Fire"
-      title="Food Fire"
-    />
+    <img className="h-28 p-2" alt="logo" src={Logo} />
   </a>
 );
 
-// Header component for header section: Logo, Nav Items
 const Header = () => {
-  const token = localStorage.getItem("token");
-  // use useState for user logged in or logged out
-  const [isLoggedin, setIsLoggedin] = useState(
-    token?.length === 100 ? true : false
-  );
-  const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const isOnline = useOnline();
 
   return (
-    <div className="header">
+    <div className="flex justify-between bg-pink-50 shadow-lg sm:bg-blue-50 md:bg-yellow-50">
       <Title />
       <div className="nav-items">
-        <ul>
-          <li>
+        <ul className="flex py-10">
+          <li className="px-2">
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
 
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <i className="fa-solid fa-cart-shopping"></i>
-          </li>
-          <li>
-            {/* use conditional rendering for login and logout */}
-            {isLoggedin ? (
-              <button
-                className="logout-btn"
-                onClick={() => {
-                  localStorage.clear();
-                  setIsLoggedin(!isLoggedin);
-                }}
-              >
-                Logout
-              </button>
-            ) : (
-              <button className="login-btn" onClick={() => navigate("/login")}>
-                Login
-              </button>
-            )}
-          </li>
+          <Link to="/about">
+            <li className="px-2">About</li>
+          </Link>
+          <Link to="/contact">
+            <li className="px-2">Contact</li>
+          </Link>
+          <li className="px-2">Cart</li>
+          <Link to="/instamart">
+            <li className="px-2">Instamart</li>
+          </Link>
         </ul>
       </div>
+      <h1>{isOnline ? "✅" : "🔴"}</h1>
+      {isLoggedIn ? (
+        <button onClick={() => setIsLoggedIn(false)}>Logout</button>
+      ) : (
+        <button onClick={() => setIsLoggedIn(true)}>Login</button>
+      )}
     </div>
   );
 };
