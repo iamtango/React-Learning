@@ -11,8 +11,9 @@
 |  8.  | Let's get Classy           | `class components`                                 |         [ 🔗](8.Lets%20Get%20Classy)          |
 |  9.  | Optimizing our App         | `custom hooks` `lazy loading`                      |        [ 🔗](9.Optimizing%20our%20app)        |
 |  10.  | Jo Dikhta Hai Vo Bikta Hai        | `UI Layer & Data Layer` `PROPS DRILLING` `Context`                      |        [ 🔗](10.Jo%20DIkhta%20Hai%20Vo%20Bikta%20hai/)        
-|  11.  | Lets Build our Store        | `Redux Toolkit` `Redux Architecture`                      |        [ 🔗](11.Lets%20Build%20our%20Store/)        
-|  12.  | Time for the test        | `JEST` `Redux Architecture`                      |        [ 🔗](12.Time%20for%20the%20test/)        
+|  11.  | Lets Build our Store        | `Redux Toolkit` `Redux Architecture`                      |        [ 🔗](11.Lets%20Build%20our%20Store/)        |        
+|  12.  | Time for the test        | `JEST`                       |        [ 🔗](12.Time%20for%20the%20test/)        | 
+|  13.  | Machine Coding Interview         | `Whole Coverup In Project`                      |        [ 🔗](13.Machine%20Coding%20Interview/)        |       
 
 # React-Learning
 cdn links make the project slow

@@ -382,3 +382,23 @@ expect().toBe
 
 Install 
 npm i -D @testing-library/jest-dom
+
+# -----------------------------------------------------------------------------------
+
+    # MAchine Code Interview
+
+    1. Requirement clearificaition
+        -> Features
+        -> Tech Stack
+            -> Redux or Contex
+            -> TaiwindCSS
+            -> react router dom
+            -> bundler
+            -> JEST
+
+# npx create-react-app
+ 
+ npx tailwind init create tailwind config file
+
+ # racfe
+
