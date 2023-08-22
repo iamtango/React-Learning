@@ -395,6 +395,7 @@ npm i -D @testing-library/jest-dom
             -> react router dom
             -> bundler
             -> JEST
+    2. Planning (Better U plan better u code)       
 
 # npx create-react-app
  
@@ -402,3 +403,15 @@ npm i -D @testing-library/jest-dom
 
  # racfe
 
+ # -----------------------------------------------------------------------------------
+
+        # Building Advanced Youtube
+
+  #  Higher Order Component => It takes existing Component and modifty little
+
+# Debouncing => It is the concept that to find the Diffrence between the two key strokes
+
+Quick hack if want to check the api working or not check in browsers console 
+ex : fetch("API_CALL")
+
+# N-Level Nested Comments
