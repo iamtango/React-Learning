@@ -1,5 +1,5 @@
 # Jo Dikhta hai Vo Bikta hai
-# Q: Why we Use Frameworks
+### Q: Why we Use Frameworks
   A: 1. to Write optimized css, 2. it saves time
  
 - Why frameworks?
@@ -67,7 +67,7 @@ npx tailwindcss init >> it make tailwind.config.js
 
 In the tailwind.config.js file "content" array is use so that tailwind know that only these extension file be executed
 
-# postcssrc we have to create so that our bundler know that we use tailwind css so it can compile
+### postcssrc we have to create so that our bundler know that we use tailwind css so it can compile
 In short 'it compile Tailwind Css into normal css'
 
 when we write tailwind css we dont write any css in css file just write
@@ -81,23 +81,23 @@ use extension tailwindcss intellisense
 use [] =>Square bracet notesion for the precious or exact value or dynamic value
 example: w-[200px]
 
-# -----------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 
-# Data is the New Oil
+    # Data is the New Oil
 
 UI Layer < Data Layer (UI Layer | Data Layer)
 
-# Q: In UI what does data layer consist of ?
+### Q: In UI what does data layer consist of ?
   A:It Manges by State and props
 
-#   Q: Diffrence Between State And Props ?
+###   Q: Diffrence Between State And Props ?
     A: State can be change where Props cannot be change
         State which in the local variable 
         Props are somethings whoes value can be pass from one element component to the another
         Props are kind of local state variable to the parent component
         # Props is something which is recieving inside the component
 
-# PROPS DRILLING => drilling props from top to bottom level
+### PROPS DRILLING => drilling props from top to bottom level
 
 React dev tools extension in chrome
 showing whole tree in chrome
@@ -106,8 +106,8 @@ showing whole tree in chrome
 accessing parents property into child is called PROPS Drilling
 and we can access child property by using custom hooks 
 
-# useContext is the normal hook
-# React context is use for piece of data use anywhere in the app and it is normal function
+### useContext is the normal hook
+### React context is use for piece of data use anywhere in the app and it is normal function
 u can create multiple context in the app
 
 Props And state are tied to the compoent but React Context is not tied to the component
@@ -115,29 +115,28 @@ Props And state are tied to the compoent but React Context is not tied to the co
 <UserContext.Consumer>
 <UserContext.Provider>
 
-# React routing also  done with the help of context
+### React routing also  done with the help of context
 
 #only for debugging
 Writing a name to the context provider is good and remove the comfusion if had more context in the app so use
 put the .displayName method
 ex: userConetxt.displayName = "Name_Which_want_to_display";
 
-
-# We use Contex to avoid Prop Drilling
+### We use Contex to avoid Prop Drilling
 Asume Contex like a outer garage where u store cars  and can be use 
-# Any component of ur app can be access and can be modify the context
+### Any component of ur app can be access and can be modify the context
 ex : theme (dark and light)
-# -----------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
     # Lets Build our Store  
   
-# Redux
+### Redux
   It help to manage Data Layer of our Application
   It burden to use context for the large scalable app so Redux come into the picture
 
 
 When u use to build small app then context u have to use otherwise redux
 
-# It is complicated library so it come with REDUX TOOLKIT
+### It is complicated library so it come with REDUX TOOLKIT
 
 
 ## Theory:
@@ -309,30 +308,30 @@ createSlice
             clearCart
 Reducer contain Mapping of action and reducer function 
 
-# useSelector hook is very good hook it will directly give access to the store  It is help to SUBSCRIBE
+### useSelector hook is very good hook it will directly give access to the store  It is help to SUBSCRIBE
 Subscribing to the specific store
 
 useDispacth come from react-redux
 
-# Redux === context
+## Redux === context
 
 Redux devtool Extension  IMP if u work in redux
 
-# -----------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
     ## Time for test
 
 How to test ur react application
 
-# React Testing Library
+### React Testing Library
 
-# Q: Why we need Test Cases ?
+### Q: Why we need Test Cases ?
   A: To check the performace of code
      1.Adding new functionality will not break existing functionality
 
 @ Test Driven Development
 
-# JEST = Javascript Testing Framework 
-# jest find the test cases writtin in the file
+### JEST = Javascript Testing Framework 
+### jest find the test cases writtin in the file
 
 
 Install Testing Library
@@ -378,12 +377,12 @@ fetch is not understand by the jest use
 global.fetch = jest.fn() 
 
 expect().toBe
-# watch-test : "jest --watch"  Help not to write again an again like HMR
+### watch-test : "jest --watch"  Help not to write again an again like HMR
 
 Install 
 npm i -D @testing-library/jest-dom
 
-# -----------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 
     # MAchine Code Interview
 
@@ -397,21 +396,29 @@ npm i -D @testing-library/jest-dom
             -> JEST
     2. Planning (Better U plan better u code)       
 
-# npx create-react-app
+## npx create-react-app
  
  npx tailwind init create tailwind config file
 
- # racfe
+ ### racfe
 
- # -----------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 
         # Building Advanced Youtube
 
-  #  Higher Order Component => It takes existing Component and modifty little
+  ###  Higher Order Component => It takes existing Component and modifty little
 
-# Debouncing => It is the concept that to find the Diffrence between the two key strokes
+### Debouncing => It is the concept that to find the Diffrence between the two key strokes
 
 Quick hack if want to check the api working or not check in browsers console 
 ex : fetch("API_CALL")
 
-# N-Level Nested Comments
+N-Level Nested Comments
+
+# ------------------------------------------------------------------------
+
+    # The End Game => Live Chat
+
+    ### Live Data === Web Socket => Hand Shake
+    ###               API Polling
+
