@@ -83,7 +83,7 @@ example: w-[200px]
 
 # ------------------------------------------------------------------------
 
-    # Data is the New Oil
+# Data is the New Oil
 
 UI Layer < Data Layer (UI Layer | Data Layer)
 
@@ -127,7 +127,7 @@ Asume Contex like a outer garage where u store cars  and can be use
 ### Any component of ur app can be access and can be modify the context
 ex : theme (dark and light)
 # ------------------------------------------------------------------------
-    # Lets Build our Store  
+# Lets Build our Store  
   
 ### Redux
   It help to manage Data Layer of our Application
@@ -318,7 +318,7 @@ useDispacth come from react-redux
 Redux devtool Extension  IMP if u work in redux
 
 # ------------------------------------------------------------------------
-    ## Time for test
+# Time for test
 
 How to test ur react application
 
@@ -384,7 +384,7 @@ npm i -D @testing-library/jest-dom
 
 # ------------------------------------------------------------------------
 
-    # MAchine Code Interview
+# Machine Code Interview
 
     1. Requirement clearificaition
         -> Features
@@ -416,19 +416,18 @@ ex : fetch("API_CALL")
 N-Level Nested Comments
 
 # ------------------------------------------------------------------------
+# The End Game => Live Chat
 
-    # The End Game => Live Chat
-
-    ### Live Data 
-    ####          Web Socket => Hand Shake    
+### Live Data 
+####          Web Socket => Hand Shake    
                   Ex : Trading Platforms, Whatapp {Nearly Realtime}
-    ####         API Polling
+####         API Polling
                   Ex : Gmail, Cricbuzz {Time in Interview}
 
-    ## New Hooks
-    #### UseMemo -> Increase the Performance `Cache the Results` Optimizing the code
-    #### UseCallback -> `Cache the Function`
-    #### UseRef -> `Let refrence a Value that's not needd to Rerendering` Update the Value but not want to rerender `Return Object`
+## New Hooks
+#### UseMemo -> Increase the Performance `Cache the Results` Optimizing the code
+#### UseCallback -> `Cache the Function`
+#### UseRef -> `Let refrence a Value that's not needd to Rerendering` Update the Value but not want to rerender `Return Object`
 
 ## Normal Var VS State Variable  -> Normal Varibale not render the page but state can and Normal Variable can be start from the start if give pause for while but state will resume from the previous value    and if we dont want to reset the value set in normal Var then use UseRef it will resume 
     
