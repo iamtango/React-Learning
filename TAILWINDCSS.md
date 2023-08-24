@@ -419,6 +419,16 @@ N-Level Nested Comments
 
     # The End Game => Live Chat
 
-    ### Live Data === Web Socket => Hand Shake
-    ###               API Polling
+    ### Live Data 
+    ####          Web Socket => Hand Shake    
+                  Ex : Trading Platforms, Whatapp {Nearly Realtime}
+    ####         API Polling
+                  Ex : Gmail, Cricbuzz {Time in Interview}
 
+    ## New Hooks
+    #### UseMemo -> Increase the Performance `Cache the Results` Optimizing the code
+    #### UseCallback -> `Cache the Function`
+    #### UseRef -> `Let refrence a Value that's not needd to Rerendering` Update the Value but not want to rerender `Return Object`
+
+## Normal Var VS State Variable  -> Normal Varibale not render the page but state can and Normal Variable can be start from the start if give pause for while but state will resume from the previous value    and if we dont want to reset the value set in normal Var then use UseRef it will resume 
+    
