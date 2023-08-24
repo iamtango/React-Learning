@@ -14,7 +14,8 @@
 |  11.  | Lets Build our Store        | `Redux Toolkit` `Redux Architecture`                      |        [ 🔗](11.Lets%20Build%20our%20Store/)        |        
 |  12.  | Time for the test        | `JEST`                       |        [ 🔗](12.Time%20for%20the%20test/)        | 
 |  13.  | Machine Coding Interview         | `Whole Coverup In Project`                      |        [ 🔗](13.Machine%20Coding%20Interview/)        |       
-|  14.  | Building Advanced Youtube        | `Whole Coverup In Project`                      |        [ 🔗](13.Machine%20Coding%20Interview/)        |       
+|  14.  | Building Advanced Youtube        | `Whole Coverup In Project`                      |        [ 🔗](14.%20Building%20Advance%20Youtube/)        |       
+|  15.  | The End Game        | `Whole Coverup In Project`                      |        [ 🔗](15.%20The%20End%20Game/)        |       
 
 # React-Learning
 cdn links make the project slow
