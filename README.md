@@ -47,15 +47,9 @@ and it will minifyall the dile into the dist folder
 Polyfill =>is nothing but the code which is replacement for the newer version of the code
 (converting the code to the older version of the browser is Called Bable)
 
-<details>
-<summary><h2> Q: How can u build perfomant web scalable app?</h2></summary><br>
-<blockquote>
-
+<h2> Q: How can u build perfomant web scalable app?</h2>
 A: There are so many things React optimise do it for us and so many things bundlers gives us
 whole app is the combination of these 2 things.
-
-</blockquote><br>
-</details>
 
 npm i -D babel-plugin-transform-remove-console => remove the console.logs
 in the dist folder which help to minify the code
@@ -67,12 +61,8 @@ render means updating something into the dom
 
 JSX its use the html inside the js
 
-<details>
-<summary><h2> Q: what is JSX? </h2</summary><br>
-<blockquote>
+<h2> Q: what is JSX? </h2>
 A: JSX is the html like syntax but it is not html inside js
-</blockquote><br>
-</details>
 
 jsx use React.createElement behind the scene JSX => React.createElement => Object =>HTML(DOM)
 babel understand JSX
@@ -83,14 +73,8 @@ babel is the compiler next generation js
     // Functional  it is NEW
     //  class based component it is OLD
 
-<details>
-<summary><h2> Q: what is functional component </h2</summary><br>
-<blockquote>
-
+<h2> Q: what is functional component </h2>
 A: it is nothing but the function that return some piece of jsx or react element
-
-</blockquote><br>
-</details>
 
 Write name of the component start with capital letter.
 
@@ -110,14 +94,8 @@ Virtual DOM is just not the concept of the react but the concept of the Software
 
 Virtual DOM => Keeping the reperesntetion of the dom with us.
 
-<details>
-<summary><h2> Q:Why we need Virtual DOM? </h2</summary><br>
-<blockquote>
-
+<h2> Q:Why we need Virtual DOM? </h2>
 A: It needed for Reconciliation uses diff algo =>it find diff between Trees (it will only reender the specific portion)
-
-</blockquote><br>
-</details>
 
 Key help to react that what need to be Updated
 
@@ -127,10 +105,7 @@ Every Compnent in react maintains the state and u can put all the variable into 
 
 What is state
 
-<details>
-<summary><h2> Q:what is useState? </h2</summary><br>
-<blockquote>
-
+<h2> Q:what is useState? </h2>
 A: It is use to create a state varibales and it comes form react
 useState() => it return an array and the first variable of the array is the variable name and second is the function to upadate the variable
 syntax :
@@ -138,19 +113,10 @@ syntax :
 
                 const [variableName, setVariableName] =useState("Search"); //use the text in param
 
-</blockquote><br>
-</details>
-
 React says Every time u need ur varibale to be sync with UI Use useState variable.
 
-<details>
-<summary><h2> Q:what is React hooks?</h2</summary><br>
-<blockquote>
-
+<h2> Q:what is React hooks?</h2>
     A: it is nothing but the normal function, the are so many hooks and one of the hook we use is useState hook
-
-</blockquote><br>
-</details>
 
 # ------------------------------------------------------------------------
 
