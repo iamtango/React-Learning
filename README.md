@@ -134,9 +134,7 @@ Monolith >> whole project deploy uding 1 repo
 <h2> Q: Microservice Advantages </h2>
     A: Diffrent projects all together,  Easy to maintain,Sepration of concern , no need to depend on some specific Lang.
 
--------------xxxxxxxx-------------
-
-# Hooks start with use
+### Hooks start with use
 
 we can use hooks by simply calling them
 
@@ -147,59 +145,59 @@ we can use hooks by simply calling them
    use can calll the useEffect() by giving 2 params they are CALLBACK and DEPENDENCY ARRAY.
    if we pass anything into the dependency array then everytime the value is use the useEffect is call
 
-   # It is the best place to make API call
+### It is the best place to make API call
 
-   by default it will be call once after components render
+by default it will be call once after components render
 
-   and if we dont pass any thing in the useEffect hook apart from the callback function it will call every time when the component renders, if we pass dependency arry then it will call only once after render
+and if we dont pass any thing in the useEffect hook apart from the callback function it will call every time when the component renders, if we pass dependency arry then it will call only once after render
 
-   # optional Chaining >> if data not presend in the perticualr place it help to not get and error
+### optional Chaining >> if data not presend in the perticualr place it help to not get and error
 
-   # Shimmer effect which resembless the actual page's UI
+### Shimmer effect which resembless the actual page's UI
 
-   by default the length of the page is 0
+by default the length of the page is 0
 
 Don't create (Functional) component inside component, otherwise it will call alot of times
 
-# Never write your useState Inside the IF..Else or also in Forloop
+### Never write your useState Inside the IF..Else or also in Forloop
 
-# react gives useState hook to use as local variable inside functional component
+### react gives useState hook to use as local variable inside functional component
 
-# @Never use usestate outside of functional component
+### @Never use usestate outside of functional component
 
-# CDN is the optimalway to store images because it is fast
+### CDN is the optimalway to store images because it is fast
 
-# createBrowserRouter it comes from react-router-dom help to create routing{route to perticular page } it takes some configuration(Array){which is the list of path}
+### createBrowserRouter it comes from react-router-dom help to create routing{route to perticular page } it takes some configuration(Array){which is the list of path}
 
-# RouterProvider it comes from react-router-dom help to create routing
+### RouterProvider it comes from react-router-dom help to create routing
 
 root.render rnders whatever u gave so if u want to render acccordingly then use RouterProvider
 Syntax:
 root.render(<RouterProvider router={createBrowserRouter_const_name}>)
 
-# SPA - Single Page Application
+## SPA - Single Page Application
 
-# There are 2 types of routing
+### There are 2 types of routing
 
 1.Client-side routing
 2.Server-side routing =>it is a way that all pages comes from server
 
-# Links are the another component comes from react-router-dom help to create routing
+### Links are the another component comes from react-router-dom help to create routing
 
-# if want to route to another page but also wanted SPA then Import Link from react-router-dom
+### if want to route to another page but also wanted SPA then Import Link from react-router-dom
 
-# and it is alternative of anchor tag, anchor tag reload the whole page while Link does SPA
+### and it is alternative of anchor tag, anchor tag reload the whole page while Link does SPA
 
-# at the end Link Compoent uses anchor tag behind the scenes
+### at the end Link Compoent uses anchor tag behind the scenes
 
 if u have to create nested route u have to create Outlets it comes from react-router-dom
 help to keep changing according to the routes
 
-# all the children written in the createBrowserRouter goes into the outlet
+### all the children written in the createBrowserRouter goes into the outlet
 
-# useParams is another hook it is use to read the dinamic url parameters
+### useParams is another hook it is use to read the dinamic url parameters
 
-----------------XXXXXXXXXXXXX----------------
+# ----------------------------------------------------------------
 
 # Q: _ Class Based Components _
 
