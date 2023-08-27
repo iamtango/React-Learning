@@ -61,7 +61,7 @@ npm i -D babel-plugin-transform-remove-console => remove the console.logs
 in the dist folder which help to minify the code
 .babelrc is use for babel configuration.
 
-Reconcilition(https://legacy.reactjs.org/docs/reconciliation.html)
+[Reconcilition](https://legacy.reactjs.org/docs/reconciliation.html)
 
 render means updating something into the dom
 
@@ -70,9 +70,7 @@ JSX its use the html inside the js
 <details>
 <summary><h2> Q: what is JSX? </h2</summary><br>
 <blockquote>
-
 A: JSX is the html like syntax but it is not html inside js
-
 </blockquote><br>
 </details>
 
