@@ -88,7 +88,7 @@ using React.Fragment is looks so ugly so instead of that write empty <> </>
 
 <React.Fragment> < /React.Fragment> === <></>
 
-**\*** Config Driven UI **\***
+**_ Config Driven UI _**
 
 Virtual DOM is just not the concept of the react but the concept of the Software Engg concept and react also use it
 
@@ -173,7 +173,7 @@ Don't create (Functional) component inside component, otherwise it will call alo
 
 root.render rnders whatever u gave so if u want to render acccordingly then use RouterProvider
 Syntax:
-root.render(<RouterProvider router={createBrowserRouter_const_name}>)
+root.render(RouterProvider router={createBrowserRouter_const_name}>)
 
 ## SPA - Single Page Application
 
@@ -247,9 +247,7 @@ Upon OnDemand LOading -> Upon Render -> Suspend Loading
 So to avoid the error it uses another component call suspense component and put another component in between
 and if the component take long time to load into the app then suspense use props called fallback
 Syntax :
-{ <Suspense fallback={<Shimmer />}>
-<Instamart />
-<Suspense/> }
+{ <Suspense fallback={<Shimmer />}> <Instamart /> <Suspense/> }
 
 # Never Ever Dynamically load ur component into the the Another Component
 
