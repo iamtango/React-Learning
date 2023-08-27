@@ -253,7 +253,7 @@ Syntax :
 
 ### ----------------------------------------------------------------
 
-# Jo Dikhta hai Vo Bikta hai
+<div align="center"> <h2> Jo Dikhta hai Vo Bikta hai </h2> </div>
 
 ### Q: Why we Use Frameworks
 
@@ -341,7 +341,7 @@ example: w-[200px]
 
 ### ------------------------------------------------------------------------
 
-# Data is the New Oil
+<div align="center"> <h2> Data is the New Oil</h2> </div>
 
 UI Layer < Data Layer (UI Layer | Data Layer)
 
@@ -393,7 +393,7 @@ ex : theme (dark and light)
 
 ### ------------------------------------------------------------------------
 
-# Lets Build our Store
+<div align="center"> <h2>  Lets Build our Store</h2> </div>
 
 ### Redux
 
@@ -554,10 +554,8 @@ if u click on the + button of the store it will dispatches an action which calls
 - Button >>Dispatching Action >> Reducer function >> Slice redux store >> Selector
 
 When we click on Add Button, we dispatch an action, which calls a reducer function, which updates the slice of the store & for reading data, we subscribe the store. Then, it automagically updates.
-![Redux Store](image.png)
-![Flow](image-1.png)
 
-<p><img  width="600" height="400" src="12.png"></p>
+<p><img  width="900" height="400" src="12.png"></p>
 
 Selector is Hook
 
