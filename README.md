@@ -587,7 +587,7 @@ Redux devtool Extension IMP if u work in redux
 
 ### ------------------------------------------------------------------------
 
-# Time for test
+<div align="center"> <h2>Time for test</h2> </div>
 
 How to test ur react application
 
@@ -651,7 +651,7 @@ npm i -D @testing-library/jest-dom
 
 ### ------------------------------------------------------------------------
 
-# Machine Code Interview
+<div align="center"> <h2>Machine Code Interview</h2> </div>
 
     1. Requirement clearificaition
         -> Features
@@ -671,7 +671,7 @@ npx tailwind init create tailwind config file
 
 ### ------------------------------------------------------------------------
 
-        # Building Advanced Youtube
+<div align="center"> <h2> Building Advanced Youtube</h2> </div>
 
 ### Higher Order Component => It takes existing Component and modifty little
 
@@ -684,7 +684,7 @@ N-Level Nested Comments
 
 ### ------------------------------------------------------------------------
 
-# The End Game => Live Chat
+<div align="center"> <h2>The End Game =></h2> </div>  `Live Chat`
 
 ### Topics Coverd:-
 
