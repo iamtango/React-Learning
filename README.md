@@ -13,7 +13,7 @@
 | 11.  | Lets Build our Store       | `Redux Toolkit` `Redux Architecture`               |        [ 🔗](11.Lets%20Build%20our%20Store/)        |
 | 12.  | Time for the test          | `JEST`                                             |         [ 🔗](12.Time%20for%20the%20test/)          |
 | 13.  | Machine Coding Interview   | `Whole Coverup In Project`                         |       [ 🔗](13.Machine%20Coding%20Interview/)       |
-| 14.  | Building Advanced Youtube  | `Whole Coverup In Project`                         |     [ 🔗](14.%20Building%20Advance%20Youtube/)      |
+| 14.  | Building Advanced Youtube  | `Debouncing` `Higher Order Component`              |     [ 🔗](14.%20Building%20Advance%20Youtube/)      |
 | 15.  | The End Game               | `Live Chat` `API Polling` `Hooks`                  |           [ 🔗](15.%20The%20End%20Game/)            |
 
 <div align="center"> <h1> React-Learning </h1> </div>
@@ -613,11 +613,11 @@ configure jest by creating jest.config file
 -> npx jest --init
 npm run jest
 npm i -D jest-environment-jsdom
-Create my first test - create ne folder with the name "**tests**"
+Create my first test - create ne folder with the name "** tests**"
 naming convention for writing the test cases with ".test.js"
 Configure jest with babel
 -> npm install --save-dev babel-jest @babel/core @babel/preset-env  
- -[JEST Configure doc] (https://jestjs.io/docs/getting-started#using-babel)
+ -[JEST Configure doc](https://jestjs.io/docs/getting-started#using-babel)
 Write some text cases
 then npm run test
 -gitignore Coverage report
