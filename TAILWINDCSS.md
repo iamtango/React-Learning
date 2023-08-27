@@ -4,7 +4,7 @@
 
 A: 1. to Write optimized css, 2. it saves time
 
-https://nerdcave.com/tailwind-cheat-sheet
+[Tailwind Cheatsheet](https://nerdcave.com/tailwind-cheat-sheet)
 
 - Why frameworks?
 
@@ -84,7 +84,7 @@ use extension tailwindcss intellisense
 use [] =>Square bracet notesion for the precious or exact value or dynamic value
 example: w-[200px]
 
-# ------------------------------------------------------------------------
+### ------------------------------------------------------------------------
 
 # Data is the New Oil
 
@@ -136,7 +136,7 @@ Asume Contex like a outer garage where u store cars and can be use
 
 ex : theme (dark and light)
 
-# ------------------------------------------------------------------------
+### ------------------------------------------------------------------------
 
 # Lets Build our Store
 
@@ -332,7 +332,7 @@ useDispacth come from react-redux
 
 Redux devtool Extension IMP if u work in redux
 
-# ------------------------------------------------------------------------
+### ------------------------------------------------------------------------
 
 # Time for test
 
@@ -396,7 +396,7 @@ expect().toBe
 Install
 npm i -D @testing-library/jest-dom
 
-# ------------------------------------------------------------------------
+### ------------------------------------------------------------------------
 
 # Machine Code Interview
 
@@ -416,7 +416,7 @@ npx tailwind init create tailwind config file
 
 ### racfe
 
-# ------------------------------------------------------------------------
+### ------------------------------------------------------------------------
 
         # Building Advanced Youtube
 
@@ -429,7 +429,7 @@ ex : fetch("API_CALL")
 
 N-Level Nested Comments
 
-# ------------------------------------------------------------------------
+### ------------------------------------------------------------------------
 
 # The End Game => Live Chat
 
@@ -464,4 +464,4 @@ While creating `youtube clone` covered:
 
 #### UseRef -> `Let refrence a Value that's not needd to Rerendering` Update the Value but not want to rerender `Return Object`
 
-## Normal Var VS State Variable -> Normal Varibale not render the page but state can and Normal Variable can be start from the start if give pause for while but state will resume from the previous value and if we dont want to reset the value set in normal Var then use UseRef it will resume
+#### Normal Var VS State Variable -> Normal Varibale not render the page but state can and Normal Variable can be start from the start if give pause for while but state will resume from the previous value and if we dont want to reset the value set in normal Var then use UseRef it will resume
