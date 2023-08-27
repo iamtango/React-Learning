@@ -249,7 +249,7 @@ and if the component take long time to load into the app then suspense use props
 Syntax :
 < Suspense fallback={< Shimmer />}> < Instamart /> < Suspense/>
 
-# Never Ever Dynamically load ur component into the the Another Component
+#### Never Ever Dynamically load ur component into the the Another Component
 
 ### ----------------------------------------------------------------
 
@@ -684,8 +684,7 @@ N-Level Nested Comments
 
 ### ------------------------------------------------------------------------
 
-<div align="center"> <h2>The End Game =></h2> </div>  `Live Chat`
-
+<div align="center"> <h2>The End Game => Live Chat</h2> </div>
 ### Topics Coverd:-
 
 While creating `youtube clone` covered:
