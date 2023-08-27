@@ -173,7 +173,7 @@ Don't create (Functional) component inside component, otherwise it will call alo
 
 root.render rnders whatever u gave so if u want to render acccordingly then use RouterProvider
 Syntax:
-root.render(RouterProvider router={createBrowserRouter_const_name}>)
+root.render(< RouterProvider router={createBrowserRouter_const_name}>)
 
 ## SPA - Single Page Application
 
