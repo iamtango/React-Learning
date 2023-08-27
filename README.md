@@ -199,13 +199,12 @@ help to keep changing according to the routes
 
 # ----------------------------------------------------------------
 
-# Q: _ Class Based Components _
-
-A: It is the easrlier concept it introduce before Hooks and it is very hard to wirte code in early time.
-It is kind of Depricated menthod its alternative is Functional Component
+<h2> Q: Class Based Components </h2>
+ A: It is the easrlier concept it introduce before Hooks and it is very hard to wirte code in early time.
+  It is kind of Depricated menthod its alternative is Functional Component
 
 we can create classbased compoent with the help of class keyword and extends React.Component and React.component comes from react
-syntax : class <className> extends React.Component
+syntax : class {className} extends React.Component
 most imp part of the classbased compoent is @Render Method it help to return some JSX code just like functional component
 
 componentDidMount is the method in the classbased component which is the best place to call the API and it will be call after first render
@@ -215,24 +214,23 @@ componentDidUpdate it will call after every next render
 
 componentWillUnmount use for "cleanUp"
 
-================================================================================================
+# ----------------------------------------------------------------
 
-# Building our Own Hooks
+### Building our Own Hooks
 
 it is use for useablability, readablelity, easy to maintain
 
 whenever create any hook always make new file and file name start with use
 
-# useState Returns >> target
+### useState Returns >> target
 
 there is one event listner call Online which help to show the user is offline or not
 and is u use any event listner u must need to clean all the event listner because if u use another listner and then back to that normal listner then the new event listner is being call so use "Unmounting"
 
-# Q: How many JS /JSX file parcel produce?
-
+<h2> Q: How many JS /JSX file parcel produce?</h2>
 A: Only one
 
-# One one js file created by bundle but it is bigger projects and has more than 100 components then one-bundle break ur code
+### One one js file created by bundle but it is bigger projects and has more than 100 components then one-bundle break ur code
 
 so u have to splitting the code or make it in small chunks or "OnDemand Loading"
 
@@ -243,15 +241,15 @@ const VARNAME = lazy( ( ) => import("Relative Path") )
 
 react will try to render the things which is not in there so it gives an error so it will suspend the operation
 
-# When u r loading the component on demand react try to sunspend it
+### When u r loading the component on demand react try to sunspend it
 
 Upon OnDemand LOading -> Upon Render -> Suspend Loading
 So to avoid the error it uses another component call suspense component and put another component in between
 and if the component take long time to load into the app then suspense use props called fallback
 Syntax :
-<Suspense fallback={<Shimmer />}>
+{ <Suspense fallback={<Shimmer />}>
 <Instamart />
-<Suspense/>
+<Suspense/> }
 
 # Never Ever Dynamically load ur component into the the Another Component
 
