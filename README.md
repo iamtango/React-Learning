@@ -25,8 +25,8 @@ npm use to manage all the package
 npm init => create package.json
 
 npm i -D parcel => it is use to install parcel as devdependencies
--D means devdependencies only in the Devlopment Environment
-we can install any package without -D that means it for globle Environment
+-D means devdependencies only in the Development Environment
+we can install any package without -D that means it for global Environment
 ^ (caret) => Auto upgrade to existing version
 
 as soon as any dependencies/devdependencies install then package-lock.json file
