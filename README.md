@@ -9,12 +9,13 @@
 |  7.  | Finding the path           | `Routing` `create-router-dom` `Formik`             |             [ 🔗](07-finding-the-path)              |
 |  8.  | Let's get Classy           | `class components`                                 |            [ 🔗](8.Lets%20Get%20Classy)             |
 |  9.  | Optimizing our App         | `custom hooks` `lazy loading`                      |           [ 🔗](9.Optimizing%20our%20app)           |
-| 10.  | Data is the new Oil        | `UI Layer & Data Layer` `PROPS DRILLING` `Context` |   [ 🔗](10.Jo%20DIkhta%20Hai%20Vo%20Bikta%20hai/)   |
-| 11.  | Lets Build our Store       | `Redux Toolkit` `Redux Architecture`               |        [ 🔗](11.Lets%20Build%20our%20Store/)        |
-| 12.  | Time for the test          | `JEST`                                             |         [ 🔗](12.Time%20for%20the%20test/)          |
-| 13.  | Machine Coding Interview   | `Whole Coverup In Project`                         |       [ 🔗](13.Machine%20Coding%20Interview/)       |
-| 14.  | Building Advanced Youtube  | `Debouncing` `Higher Order Component`              |     [ 🔗](14.%20Building%20Advance%20Youtube/)      |
-| 15.  | The End Game               | `Live Chat` `API Polling` `Hooks`                  |           [ 🔗](15.%20The%20End%20Game/)            |
+| 10.  | Jo Dikhta hai vo bikta hai | `Tailwindcss`                                      |   [ 🔗](10.Jo%20DIkhta%20Hai%20Vo%20Bikta%20hai/)   |
+| 11.  | Data is the new Oil        | `UI Layer & Data Layer` `PROPS DRILLING` `Context` |   [ 🔗](11)   |
+| 12.  | Lets Build our Store       | `Redux Toolkit` `Redux Architecture`               |        [ 🔗](11.Lets%20Build%20our%20Store/)        |
+| 13.  | Time for the test          | `JEST`                                             |         [ 🔗](12.Time%20for%20the%20test/)          |
+| 14.  | Machine Coding Interview   | `Whole Coverup In Project`                         |       [ 🔗](13.Machine%20Coding%20Interview/)       |
+| 15.  | Building Advanced Youtube  | `Debouncing` `Higher Order Component`              |     [ 🔗](14.%20Building%20Advance%20Youtube/)      |
+| 16.  | The End Game               | `Live Chat` `API Polling` `Hooks`                  |           [ 🔗](15.%20The%20End%20Game/)            |
 
 <div align="center"> <h1> React-Learning </h1> </div>
 
