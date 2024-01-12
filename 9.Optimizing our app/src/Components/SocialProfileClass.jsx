@@ -1,11 +1,6 @@
 import { Component } from "react";
 import { SiGmail, SiLinkedin, SiGithub, SiTwitter } from "react-icons/si";
-import {
-  Github_Link,
-  Email_Link,
-  Linkedin_Link,
-  Twitter_Link,
-} from "../constants";
+import { Github_Link, Email_Link, Linkedin_Link } from "../constants";
 
 class SocialProfileClass extends Component {
   constructor(props) {
@@ -32,8 +27,7 @@ class SocialProfileClass extends Component {
         <a
           href={Linkedin_Link}
           className="icon-button linkedin"
-          target="_blank"
-        >
+          target="_blank">
           <i>
             <SiLinkedin />
           </i>

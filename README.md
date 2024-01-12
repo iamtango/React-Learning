@@ -18,7 +18,14 @@
 
 <div align="center"> <h1> React-Learning </h1> </div>
 
-cdn links make the project slow
+Cheetsheet:
+
+1. [React](https://react-tutorial.app/app.html?id=328)
+2. [Javascript](https://learnjavascript.online/?utm_source=react-tutorial.app)
+3. [TailwindCSS](https://nerdcave.com/tailwind-cheat-sheet)
+4. [JEST](https://jestjs.io/docs/getting-started#using-babel)
+
+   cdn links make the project slow
 
 npm use to manage all the package
 
@@ -717,3 +724,7 @@ While creating `youtube clone` covered:
 #### UseRef -> `Let refrence a Value that's not needd to Rerendering` Update the Value but not want to rerender `Return Object`
 
 #### Normal Var VS State Variable -> Normal Varibale not render the page but state can and Normal Variable can be start from the start if give pause for while but state will resume from the previous value and if we dont want to reset the value set in normal Var then use UseRef it will resume
+
+## =======================================================================================================
+
+Transitive Dependencides

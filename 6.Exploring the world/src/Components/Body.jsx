@@ -1,6 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
-import { useEffect, useState } from "react"; /* This is named export */
-import Shimmer from "./Shimmer"; /* This is default export */
+import { useEffect, useState } from "react"; /* This is named import */
+import Shimmer from "./Shimmer"; /* This is default import */
 import { swiggy_api_URL } from "../constants";
 
 // Filter the restaurant data according input type
@@ -31,7 +31,7 @@ const Body = () => {
       const data = await fetch(swiggy_api_URL);
       const json = await data.json();
       // updated state variable restaurants with Swiggy API data
-      setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+      setAllRestaurants(json?.message?.cards[2]?.data?.data?.cards);
       setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     } catch (error) {
       console.log(error);
@@ -65,15 +65,13 @@ const Body = () => {
           placeholder="Search a restaurant you want..."
           value={searchText}
           // update the state variable searchText when we typing in input box
-          onChange={(e) => setSearchText(e.target.value)}
-        ></input>
+          onChange={(e) => setSearchText(e.target.value)}></input>
         <button
           className="search-btn"
           onClick={() => {
             // user click on button searchData function is called
             searchData(searchText, allRestaurants);
-          }}
-        >
+          }}>
           Search
         </button>
       </div>
@@ -87,7 +85,7 @@ const Body = () => {
           {/* We are mapping restaurants array and passing JSON array data to RestaurantCard component as props with unique key as restaurant.data.id */}
           {filteredRestaurants.map((restaurant) => {
             return (
-              <RestaurantCard {...restaurant.data} key={restaurant.data.id}  />
+              <RestaurantCard {...restaurant.data} key={restaurant.data.id} />
             );
           })}
         </div>

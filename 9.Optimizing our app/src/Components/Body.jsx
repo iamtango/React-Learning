@@ -18,7 +18,7 @@ const Body = () => {
   const isOnline = useOnline();
   // if user is not Online then return UserOffline component
   if (!isOnline) {
-    return <UserOffline />
+    return <UserOffline />;
   }
 
   // use searchData function and set condition if data is empty show error message
@@ -54,15 +54,13 @@ const Body = () => {
             setSearchText(e.target.value);
             // when user will enter the data, it automatically called searchData function so it work same as when you click on Search button
             searchData(e.target.value, allRestaurants);
-          }}
-        ></input>
+          }}></input>
         <button
           className="search-btn"
           onClick={() => {
             // user click on button searchData function is called
             searchData(searchText, allRestaurants);
-          }}
-        >
+          }}>
           Search
         </button>
       </div>
@@ -79,8 +77,7 @@ const Body = () => {
               return (
                 <Link
                   to={"/restaurant/" + restaurant?.info?.id}
-                  key={restaurant?.info?.id}
-                >
+                  key={restaurant?.info?.id}>
                   {/* if we click on any restaurant card it will redirect to that restaurant menu page */}
                   <RestaurantCard {...restaurant?.info} />
                 </Link>
