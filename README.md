@@ -725,7 +725,7 @@ While creating `youtube clone` covered:
 
 #### Normal Var VS State Variable -> Normal Varibale not render the page but state can and Normal Variable can be start from the start if give pause for while but state will resume from the previous value and if we dont want to reset the value set in normal Var then use UseRef it will resume
 
-## =======================================================================================================
+### ------------------------------------------------------------------------
 
 Transitive Dependencides
 
@@ -735,7 +735,7 @@ Delacrative ->
 
 ## U can build web Interfaces without touching the dom & this where the name came from simply saying based on the state or data that describle the app is going to react to that
 
-## =======================================================================================================
+### ------------------------------------------------------------------------
 
 ## npx create-react-app vs npm create vite@latest
 
@@ -961,6 +961,8 @@ how work is flushed and marked as complete.
 how side-effects (such as lifecycle methods) work.
 what a coroutine is and how it can be used to implement features like context and layout.
 
+### ------------------------------------------------------------------------
+
 ## useCallback
 
 if the dependencies of useCallback changes or might possibly changes then it optimises that perticular methods only
@@ -993,6 +995,12 @@ Do not call useId to generate keys in a list. Keys should be generated from your
 
 Jab UI me kuch reflect krna raha tab use krte hai
 
+## useParams is use to get parameters from url
+
+const {userid} = useParams()
+
+### ------------------------------------------------------------------------
+
 ## React Router
 
 link use in place of <a> tag
@@ -1008,26 +1016,26 @@ className={({isActive}) =>
 Home
 </NavLink>
 
-// const router = createBrowserRouter([
-// {
-// path: '/',
-// element: <Layout/>,
-// children: [
-// {
-// path: "",
-// element: <Home />
-// },
-// {
-// path: "about",
-// element: <About />
-// },
-// {
-// path: "contact",
-// element: <Contact />
-// }
-// ]
-// }
-// ])
+      const router = createBrowserRouter([
+      {
+          path: '/',
+          element: <Layout/>,
+          children: [
+          {
+            path: "",
+            element: <Home />
+          },
+          {
+            path: "about",
+            element: <About />
+          },
+          {
+            path: "contact",
+            element: <Contact />
+          }
+          ]
+      }
+      ])
 
 const router = createBrowserRouter(
 createRoutesFromElements(
@@ -1050,7 +1058,3 @@ and createRoutesFromElements( ) this is imp
 
 createBrowserRouter u can use the loader it help to cache while the data while hovering to that element u can also call the api from the loader it call apis before useEffect
 useLoaderData()
-
-## useParams is use to get parameters from url
-
-const {userid} = useParams()
