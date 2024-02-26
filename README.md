@@ -691,7 +691,12 @@ N-Level Nested Comments
 
 ### ------------------------------------------------------------------------
 
-<div align="center"> <h2>The End Game => Live Chat</h2> </div>
+```js
+<div align="center">
+  <h2>The End Game => Live Chat</h2>{" "}
+</div>
+```
+
 ### Topics Coverd:-
 
 While creating `youtube clone` covered:
@@ -1016,45 +1021,84 @@ className={({isActive}) =>
 Home
 </NavLink>
 
-      const router = createBrowserRouter([
+```js
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
       {
-          path: '/',
-          element: <Layout/>,
-          children: [
-          {
-            path: "",
-            element: <Home />
-          },
-          {
-            path: "about",
-            element: <About />
-          },
-          {
-            path: "contact",
-            element: <Contact />
-          }
-          ]
-      }
-      ])
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+    ],
+  },
+]);
 
 const router = createBrowserRouter(
-createRoutesFromElements(
-<Route path='/' element={<Layout />}>
-<Route path='' element={<Home />} />
-<Route path='about' element={<About />} />
-<Route path='contact' element={<Contact />} />
-<Route path='user/:userid' element={<User />} />
-<Route
-loader={githubInfoLoader}
-path='github'
-element={<Github />}
-/>
-</Route>
-)
-)
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route path="" element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="user/:userid" element={<User />} />
+      <Route loader={githubInfoLoader} path="github" element={<Github />} />
+    </Route>
+  )
+);
+```
 
 above are the two different way to create route
 and createRoutesFromElements( ) this is imp
 
 createBrowserRouter u can use the loader it help to cache while the data while hovering to that element u can also call the api from the loader it call apis before useEffect
 useLoaderData()
+
+diffrence between js and jsx i.e if u need to retun jsx then write jsx otherwise js is ok
+Prop drillng is something that goes from parent to child via Props is called prop drillng
+Prop drilling refers to the process of passing down props from a parent component to a deeply nested child component through intermediate components.
+
+useContext()
+useContext() always looks for the closest provider above the component that calls it. It searches upwards and does not consider providers in the component from which you’re calling useContext()
+
+createContext()
+U CAN PASS THE INITIAL VALUE AS WELL
+
+and wrap with the createContext()
+
+we have to create provider to prove data so that we need to wrap with the
+
+```js
+ <createContext().Provider  values={props}>
+</createContext().Provider >
+```
+
+then export from that file and use to wrap this component in main file
+
+so to access the data we have to use useContext() hook and in that hook we have to pass the createContext() value;
+i.e useContext(userContext())
+and where the useConext hook use then use these file where it was provider i.e main file
+
+```js
+import { createContext, useContext } from "react";
+
+export const ThemeContext = createContext({
+  themeMode: "light",
+  darkTheme: () => {},
+  lightTheme: () => {},
+});
+
+export const ThemeProvider = ThemeContext.Provider;
+
+export default function useTheme() {
+  return useContext(ThemeContext);
+}
+```
