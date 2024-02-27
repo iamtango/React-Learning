@@ -1102,3 +1102,29 @@ export default function useTheme() {
   return useContext(ThemeContext);
 }
 ```
+
+while writing in create context we can create empty function we donot write anything in funtion
+
+loacal stoarage has only 2 method
+The localStorage object allows you to save key/value pairs in the browser.
+localStorage.setItem("lastname", "Smith");
+localStorage.getItem("lastname");
+
+we have to convert into JSON
+
+## Redux Toolkit
+
+configureStore(): wraps createStore to provide simplified configuration options and good defaults. It can automatically combine your slice reducers, adds whatever Redux middleware you supply, includes redux-thunk by default, and enables use of the Redux DevTools Extension.
+createSlice(): accepts an object of reducer functions, a slice name, and an initial state value, and automatically generates a slice reducer with corresponding action creators and action types.
+
+in reducers we provide properties or function
+and in that function we have state and action if parenthesis
+state give initial state called state (current state)
+action ke andar jo bhi action perform krna hai
+action.payload
+
+here we provide store as props while in context api we provider values as prop
+
+har applications ka single store hota hai
+
+import.meta.env.VITE\_(name of the env var)
