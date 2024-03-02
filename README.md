@@ -101,6 +101,8 @@ Virtual DOM is just not the concept of the react but the concept of the Software
 
 Virtual DOM => Keeping the reperesntetion of the dom with us.
 
+# why react is fast because it get help of state to update when whenever state varibale changes it create new object .i.e similar to React.createElement and it get diff from current and previous and that updated virtual dom then pdate the actual dom. Efficiently dom manupulation
+
 <h2> Q:Why we need Virtual DOM? </h2>
 A: It needed for Reconciliation uses diff algo =>it find diff between Trees (it will only reender the specific portion)
 
