@@ -1130,3 +1130,21 @@ here we provide store as props while in context api we provider values as prop
 har applications ka single store hota hai
 
 import.meta.env.VITE\_(name of the env var)
+
+This is importtant to search any values from table
+
+```js
+const handleSearch = () => {
+  try {
+    const filtered = helpTopics.filter((topic) =>
+      Object.values(topic).some((value) =>
+        value.toString().toLowerCase().includes(searchText.toLowerCase())
+      )
+    );
+
+    setFilterHelpTopics(filtered);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+};
+```
