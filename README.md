@@ -1148,3 +1148,23 @@ const handleSearch = () => {
   }
 };
 ```
+
+If u want to disaplay only which is in the state varibale of filteredData then u use dynamica data and that data can be created by following methods:
+this is use to help to show data dynamically from filered data
+
+```js
+{
+  Object.keys(filteredData).map((key, index) => {
+    if (key !== "slug" && key !== "id") {
+      return (
+        <td
+          key={index}
+          className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+          {filteredData[key]}
+        </td>
+      );
+    }
+    return null;
+  });
+}
+```
