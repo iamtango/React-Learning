@@ -1168,3 +1168,7 @@ this is use to help to show data dynamically from filered data
   });
 }
 ```
+
+<a> tag made an network request or call while <Link> doesnot made any requests to an server it
+Link tag is use as a client side routing
+while anchor tag is used as a server side routing
