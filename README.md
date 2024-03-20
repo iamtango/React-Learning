@@ -1169,6 +1169,14 @@ this is use to help to show data dynamically from filered data
 }
 ```
 
-<a> tag made an network request or call while <Link> doesnot made any requests to an server it
+anchor tag made an network request or call while Link doesnot made any requests to an server it
 Link tag is use as a client side routing
 while anchor tag is used as a server side routing
+
+if u want to access the any property in class then u have top use "this" keyword
+
+#### After the Render useEffect is called and render means whole body will be render
+
+#### In the class base component first Constructor will be called then render() will be called then after that componentDidMount will be called
+
+- If we need to Make any api call then we need to write this in the componentDidMount
