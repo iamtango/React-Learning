@@ -152,7 +152,20 @@ we can use hooks by simply calling them
    us can call the function by passing another function in to it and another fuction is CALLBACK function
 
    use can calll the useEffect() by giving 2 params they are CALLBACK and DEPENDENCY ARRAY.
-   if we pass anything into the dependency array then everytime the value is use the useEffect is call
+   if we pass anything into the dependency array then everytime the value is use the useEffect is call and we need tot return for cclearning up because it is SPA so if u go on another page it will stay there so better to clean up things
+   we can returnin the useEffect
+
+   ```javascript
+   useEffect(() =>{
+
+    Your code
+
+    return () =>{
+      clear code()
+    }
+
+   } ,[])
+   ```
 
 ### It is the best place to make API call
 
@@ -1180,3 +1193,18 @@ if u want to access the any property in class then u have top use "this" keyword
 #### In the class base component first Constructor will be called then render() will be called then after that componentDidMount will be called
 
 - If we need to Make any api call then we need to write this in the componentDidMount
+
+##### If had multiple children in the class based component then it will called by
+
+- Parent Constructor will be called
+- Parent Renderer will be called
+  - Child1 Constructor will be called
+  - Child1 Renderer will be called
+  - Child2 Constructor will be called
+  - Child2 Renderer will be called
+  - Child1 ComponentDidMount will called
+  - Child2 ComponentDidMount will called
+- Parent ComponentDidMount will called
+
+<p><img  width="900" height="400" src="LifeCycle Method.png"></p>
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
