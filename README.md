@@ -195,7 +195,11 @@ Don't create (Functional) component inside component, otherwise it will call alo
 
 root.render rnders whatever u gave so if u want to render acccordingly then use RouterProvider
 Syntax:
+
+```js
+
 root.render(< RouterProvider router={createBrowserRouter_const_name}>)
+```
 
 ### SPA - Single Page Application
 
@@ -269,7 +273,11 @@ Upon OnDemand LOading -> Upon Render -> Suspend Loading
 So to avoid the error it uses another component call suspense component and put another component in between
 and if the component take long time to load into the app then suspense use props called fallback
 Syntax :
+
+```js
+
 < Suspense fallback={< Shimmer />}> < Instamart /> < Suspense/>
+```
 
 #### Never Ever Dynamically load ur component into the the Another Component
 
@@ -912,16 +920,22 @@ These fields point to other fibers, describing the recursive tree structure of a
 
 The child fiber corresponds to the value returned by a component's render method. So in the following example
 
+```js
 function Parent() {
-return <Child />
+  return <Child />;
 }
+```
+
 The child fiber of Parent corresponds to Child.
 
 The sibling field accounts for the case where render returns multiple children (a new feature in Fiber!):
 
+```js
 function Parent() {
-return [<Child1 />, <Child2 />]
+  return [<Child1 />, <Child2 />];
 }
+```
+
 The child fibers form a singly-linked list whose head is the first child. So in this example, the child of Parent is Child1 and the sibling of Child1 is Child2.
 
 Going back to our function analogy, you can think of a child fiber as a tail-called function.
@@ -1208,3 +1222,15 @@ if u want to access the any property in class then u have top use "this" keyword
 
 <p><img  width="900" height="400" src="LifeCycle Method.png"></p>
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+# Signle Responsibilities component
+
+- Individual component can display individual components
+
+## If u r using custom hooks u have to return the state variable & before writing the custom hooks analysis what will be returned & what will be input
+
+# U can export multiple Functional components
+
+```js
+export { Component1, Component2,... ComponentN}
+```
