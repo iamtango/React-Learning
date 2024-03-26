@@ -705,6 +705,34 @@ npx tailwind init create tailwind config file
 
 ### Higher Order Component => It takes existing Component and modifty little
 
+syntax:
+
+```js
+export const HocComponents = (NormalComponent) => {
+  return (props) => {
+    return (
+      <div>
+        <label> Changes </label>
+        <NormalComponent {...props} />
+      </div>
+    );
+  };
+};
+```
+
+and then from where it call just imprt there and then store in the new cost varible then
+
+```js
+
+const  NewVar = HocComponents(NormalComponent)
+
+//  and use whereever u wanted
+
+<NewVar Data ={sendingDataAsProp}>
+
+
+```
+
 ### Debouncing => It is the concept that to find the Diffrence between the two key strokes
 
 Quick hack if want to check the api working or not check in browsers console
@@ -1234,3 +1262,50 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 ```js
 export { Component1, Component2,... ComponentN}
 ```
+
+## Controlled component and Uncontrolled component
+
+- If the child components manages it own state is called uncontrolled component & parent component controlled the child components state is called controlled component
+
+# Context
+
+(Ep 11 Data is ne oil last 1 hr)
+
+- to create a context use <h4>createContext </h4>
+- to use the context use <h2>useContext(Name_of_context)</h2>
+
+```js
+<contextName.Provider value={{ loggedInUser: userInfo }}></contextName.Provider>
+```
+
+This help to set the user using context
+
+- we can create nested context.provider aswell or for specific portion
+
+# Redux
+
+- React Redux is bridge to React and Redux
+
+configureStore({}) then export it
+
+- In the app create a Provider wrap up to all the data then pass the that configureStore as prop in the Provider with the name store
+
+```js
+cartSlice = createSlice({
+  name:
+  initialState : {
+
+  }
+  reducers: {
+
+  }
+})
+export const {allActions... } = cartSlice.actions
+export default cartSlice.reducer
+```
+
+```js
+useSelector((Store) => store.cart(configureStore Reducers Name).items(Name ot Initial state))
+```
+
+- to dispatch an action use useDispatch
