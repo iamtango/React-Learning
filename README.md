@@ -1271,8 +1271,8 @@ export { Component1, Component2,... ComponentN}
 
 (Ep 11 Data is ne oil last 1 hr)
 
-- to create a context use <h4>createContext </h4>
-- to use the context use <h2>useContext(Name_of_context)</h2>
+- to create a context use createContext
+- to use the context use useContext(Name_of_context)
 
 ```js
 <contextName.Provider value={{ loggedInUser: userInfo }}></contextName.Provider>
@@ -1286,7 +1286,7 @@ This help to set the user using context
 
 - React Redux is bridge to React and Redux
 
-configureStore({}) then export it
+configureStore({}) then export it and in the configureStore function we need to pass the list of reducers as objects
 
 - In the app create a Provider wrap up to all the data then pass the that configureStore as prop in the Provider with the name store
 
@@ -1309,3 +1309,9 @@ useSelector((Store) => store.cart(configureStore Reducers Name).items(Name ot In
 ```
 
 - to dispatch an action use useDispatch
+
+- we need to add the provider aswell and pass the store as prop
+
+<p><img  width="900" height="400" src="Context Vs Redux.jpg"></p>
+
+### useNavigate is hook provided by the react router dom which help to navigate through the URL
