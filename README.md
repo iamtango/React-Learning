@@ -1312,6 +1312,6 @@ useSelector((Store) => store.cart(configureStore Reducers Name).items(Name ot In
 
 - we need to add the provider aswell and pass the store as prop
 
-<p><img  width="900" height="400" src="Context Vs Redux.jpg"></p>
+<p><img  width="900" height="400" src="Context_Vs_Redux.jpg"></p>
 
 ### useNavigate is hook provided by the react router dom which help to navigate through the URL
