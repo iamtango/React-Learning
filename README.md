@@ -49,7 +49,7 @@ as soon as hit above command then dist and .parcel-cache folder created
 dist folder keep the file minify for us
 
 npx parcel build index.html => is to run the parcel and make the project production build
-and it will minifyall the dile into the dist folder
+and it will minify all the dile into the dist folder
 
 Polyfill =>is nothing but the code which is replacement for the newer version of the code
 (converting the code to the older version of the browser is Called Bable)
