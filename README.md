@@ -25,161 +25,152 @@ Cheetsheet:
 3. [TailwindCSS](https://nerdcave.com/tailwind-cheat-sheet)
 4. [JEST](https://jestjs.io/docs/getting-started#using-babel)
 
-   cdn links make the project slow
+- cdn links make the project slow
+- npm use to manage all the package
+- npm init => create package.json
+- npm i -D parcel => it is use to install parcel as Dev dependencies
+  -D means Dev dependencies only in the Development Environment
+  we can install any package without -D that means it for global Environment
+  ^ (caret) => Auto upgrade to existing version
+- as soon as any dependencies/devdependencies install then package-lock.json file
+  and node_module folder created
 
-npm use to manage all the package
+#### npm i react => to install the react
 
-npm init => create package.json
+#### npm i react-dom => to install the react-dom
 
-npm i -D parcel => it is use to install parcel as devdependencies
--D means devdependencies only in the Devlopment Environment
-we can install any package without -D that means it for globle Environment
-^ (caret) => Auto upgrade to existing version
+#### npx means it execute
 
-as soon as any dependencies/devdependencies install then package-lock.json file
-and node_module folder created
+- npx parcel index.html => is to run the parcel to the entry point
+  as soon as hit above command then dist and .parcel-cache folder created
+  dist folder keep the file minify for us
+- npx parcel build index.html => is to run the parcel and make the project production build
+  and it will minify all the file into the dist folder
 
-npm i react => to install the react
-npm i react-dom => to install the react-dom
+#### Polyfill
 
-npx means it execute
-
-npx parcel index.html => is to run the parcel to the entry point
-as soon as hit above command then dist and .parcel-cache folder created
-dist folder keep the file minify for us
-
-npx parcel build index.html => is to run the parcel and make the project production build
-and it will minify all the dile into the dist folder
-
-Polyfill =>is nothing but the code which is replacement for the newer version of the code
-(converting the code to the older version of the browser is Called Bable)
+- It is nothing but the code which is replacement for the newer version of the code (converting the code to the older version of the browser is Called Bable)
 
 <h2> Q: How can u build perfomant web scalable app?</h2>
-A: There are so many things React optimise do it for us and so many things bundlers gives us
+-  There are so many things React optimise do it for us and so many things bundlers gives us
 whole app is the combination of these 2 things.
 
-npm i -D babel-plugin-transform-remove-console => remove the console.logs
-in the dist folder which help to minify the code
-.babelrc is use for babel configuration.
+- npm i -D babel-plugin-transform-remove-console => remove the console.logs
+  in the dist folder which help to minify the code
+  .babelrc is use for babel configuration.
 
-[Reconcilition](https://legacy.reactjs.org/docs/reconciliation.html)
+#### [Reconcilition](https://legacy.reactjs.org/docs/reconciliation.html)
 
-render means updating something into the dom
-
-JSX its use the html inside the js
+##### Render means updating something into the dom
 
 <h2> Q: what is JSX? </h2>
-A: JSX is the html like syntax but it is not html inside js
+- JSX is the html like syntax but it is not html inside js
 
-jsx use React.createElement behind the scene JSX => React.createElement => Object =>HTML(DOM)
-babel understand JSX
+#### jsx use React.createElement behind the scene JSX => React.createElement => Object =>HTML(DOM)
 
-babel is the compiler next generation js
+- babel understand JSX
 
-    // React Compnent
-    // Functional  it is NEW
-    //  class based component it is OLD
+- babel is the compiler next generation js
+
+  // React Compnent
+  // Functional it is NEW
+  // class based component it is OLD
 
 <h2> Q: what is functional component </h2>
-A: it is nothing but the function that return some piece of jsx or react element
+- it is nothing but the function that return some piece of jsx or react element
 
-Write name of the component start with capital letter.
+#### Write name of the component start with capital letter.
 
-JSX is very Secure
+#### JSX is very Secure coz if rewrite all the code into html and remove all other unused code
 
-nested component is called component composition
+- Nested component is called component composition
 
-JSX can only have one parent so to overcome that React.Fragment
-came into the picture and it is like an Empty Tag
-using React.Fragment is looks so ugly so instead of that write empty <> </>
+- JSX can only have one parent so to overcome that React.Fragment came into the picture and it is like an Empty Tag using React.Fragment is looks so ugly so instead of that write empty <> </>
 
-<React.Fragment> < /React.Fragment> === <></>
+```js
+<React.Fragment> </React.Fragment> === <></>;
+```
 
 **_ Config Driven UI _**
 
-Virtual DOM is just not the concept of the react but the concept of the Software Engg concept and react also use it
+#### Virtual DOM is just not the concept of the react but the concept of the Software Engg concept and react also use it
 
-Virtual DOM => Keeping the reperesntetion of the dom with us.
+- Virtual DOM => Keeping the reperesntetion of the dom with us.
 
-# why react is fast because it get help of state to update when whenever state varibale changes it create new object .i.e similar to React.createElement and it get diff from current and previous and that updated virtual dom then pdate the actual dom. Efficiently dom manupulation
+#### why react is fast because it get help of state to update when whenever state varibale changes it create new object .i.e similar to React.createElement and it get diff from current and previous and that updated virtual dom then pdate the actual dom. Efficiently dom manupulation
 
-<h2> Q:Why we need Virtual DOM? </h2>
-A: It needed for Reconciliation uses diff algo =>it find diff between Trees (it will only reender the specific portion)
+#### Q:Why we need Virtual DOM?
 
-Key help to react that what need to be Updated
-
-React Fiber is the new Reconciliation Engine
-
-Every Compnent in react maintains the state and u can put all the variable into the state
-
-What is state
+- It needed for Reconciliation uses diff algo => It find diff between Trees (it will only Re-render the specific portion)
+- Key help to react that what need to be Updated
+- React Fiber is the new Reconciliation Engine
+- Every component in react maintains the state and u can put all the variable into the state.
 
 <h2> Q:what is useState? </h2>
-A: It is use to create a state varibales and it comes form react
-useState() => it return an array and the first variable of the array is the variable name and second is the function to upadate the variable
+- It is use to create a state varibales and it comes form react
+useState() => it return an array and the first variable of the array is the variable name and second is the function to upadate the variable. It help to reflect the change in UI
+
 syntax :
+
+```js
 //local state variable in react
+const [variableName, setVariableName] = useState("Search"); //use the text in param
+```
 
-                const [variableName, setVariableName] =useState("Search"); //use the text in param
+#### React says Every time u need ur variable to be sync with UI Use useState variable.
 
-React says Every time u need ur varibale to be sync with UI Use useState variable.
+#### Q:what is React hooks?
 
-<h2> Q:what is React hooks?</h2>
-    A: it is nothing but the normal function, the are so many hooks and one of the hook we use is useState hook
+- It is nothing but the normal function, there are so many hooks and one of the hook we use is useState hook
 
-In the Reconciliation process there is the Diff algo use in it >>> React Fiber is the new reconciliation algorith
+#### In the Reconciliation process there is the Diff algo use in it >>> React Fiber is the new reconciliation algorithm
 
-rerender the component every time when useState Varibale calls
+- Re-render the component every time when useState Varibale calls
 
 ## Q: Why React is Fast ?
 
-    A: because of the fast dom manupulation, Whenever any changes happened
-        in the state then its Quickly rerender everything (everytimes).
+- Because of the fast dom manupulation, Whenever any changes happened in the state then its Quickly Rerender everything (everytimes).
 
 ### ----------------------------------------------------------------
 
-Monolith >> whole project deploy uding 1 repo
+#### Monolith >> whole project deploy using 1 repo
 
-<h2> Q: Microservice Advantages </h2>
-    A: Diffrent projects all together,  Easy to maintain,Sepration of concern , no need to depend on some specific Lang.
+#### Q: Microservice Advantages
 
-### Hooks start with use
+- Diffrent projects all together, Easy to maintain, Sepration of concern , no need to depend on some specific Lang.
 
-we can use hooks by simply calling them
+#### Hooks start with use
 
-2. @Hook >> useEffect Hook > it comes from react Lib
+- we can use hooks by simply calling them
+- 2. @Hook >> useEffect Hook > it comes from react Library
+- You can call the function by passing another function in to it and another fuction is CALLBACK function
+- You can call the useEffect() by giving 2 params they are CALLBACK and DEPENDENCY ARRAY.
+  - if we pass anything into the dependency array then everytime the value is use the useEffect is call and we need to return for cleaning up because it is SPA so if u go on another page it will stay there so better to clean up things
+    we can returning from the useEffect
 
-   us can call the function by passing another function in to it and another fuction is CALLBACK function
+```javascript
+useEffect(() =>{
 
-   use can calll the useEffect() by giving 2 params they are CALLBACK and DEPENDENCY ARRAY.
-   if we pass anything into the dependency array then everytime the value is use the useEffect is call and we need tot return for cclearning up because it is SPA so if u go on another page it will stay there so better to clean up things
-   we can returnin the useEffect
+ Your code
 
-   ```javascript
-   useEffect(() =>{
+ return () =>{
+   clear code()
+ }
 
-    Your code
-
-    return () =>{
-      clear code()
-    }
-
-   } ,[])
-   ```
+} ,[])
+```
 
 ### It is the best place to make API call
 
-by default it will be call once after components render
+- by default it will be call once after components render
+  - and if we dont pass any thing in the useEffect hook apart from the callback function it will call every time when the component renders, if we pass dependency arry then it will call only once after render
 
-and if we dont pass any thing in the useEffect hook apart from the callback function it will call every time when the component renders, if we pass dependency arry then it will call only once after render
+### Optional Chaining >> if data not presend in the perticular place it help to not get and error
 
-### optional Chaining >> if data not presend in the perticualr place it help to not get and error
+### Shimmer effect which resembless the actual page's UI.
 
-### Shimmer effect which resembless the actual page's UI
-
-by default the length of the page is 0
-
-Don't create (Functional) component inside component, otherwise it will call alot of times
+- by default the length of the page is 0
+- Don't create (Functional) component inside component, otherwise it will call alot of times
 
 #### Never write your useState Inside the IF..Else or also in Forloop
 
@@ -205,77 +196,80 @@ root.render(< RouterProvider router={createBrowserRouter_const_name}>)
 
 #### There are 2 types of routing
 
-1.Client-side routing
-2.Server-side routing =>it is a way that all pages comes from server
+- Client-side routing
+- Server-side routing =>it is a way that all pages comes from server
 
-#### Links are the another component comes from react-router-dom help to create routing
+#### Link
 
-#### if want to route to another page but also wanted SPA then Import Link from react-router-dom
+- Links are the another component comes from react-router-dom help to create routing
+- if want to route to another page but also wanted SPA then Import Link from react-router-dom
+- and it is alternative of anchor tag, anchor tag reload the whole page while Link does SPA
+- at the end Link Compoent uses anchor tag behind the scenes
 
-#### and it is alternative of anchor tag, anchor tag reload the whole page while Link does SPA
+- if u have to create nested route u have to create <b>`Outlets`</b> it comes from react-router-dom
+  help to keep changing according to the routes
 
-#### at the end Link Compoent uses anchor tag behind the scenes
+#### all the children written in the createBrowserRouter goes into the outlet.
 
-if u have to create nested route u have to create Outlets it comes from react-router-dom
-help to keep changing according to the routes
-
-#### all the children written in the createBrowserRouter goes into the outlet
-
-#### useParams is another hook it is use to read the dinamic url parameters
-
-### ----------------------------------------------------------------
-
-<h2> Q: Class Based Components </h2>
- A: It is the easrlier concept it introduce before Hooks and it is very hard to wirte code in early time.
-  It is kind of Depricated menthod its alternative is Functional Component
-
-we can create classbased compoent with the help of class keyword and extends React.Component and React.component comes from react
-syntax : class {className} extends React.Component
-most imp part of the classbased compoent is @Render Method it help to return some JSX code just like functional component
-
-componentDidMount is the method in the classbased component which is the best place to call the API and it will be call after first render
-Constructor >> Render >> componentDidMount
-
-componentDidUpdate it will call after every next render
-
-componentWillUnmount use for "cleanUp"
+#### useParams is another hook it is use to read the dynamic url parameters.
 
 ### ----------------------------------------------------------------
 
-### Building our Own Hooks
+#### Q: Class Based Components
 
-it is use for useablability, readablelity, easy to maintain
+- It is the earlier concept it introduce before Hooks and it is very hard to wirte code in early time. It is kind of Depricated method its alternative is <b>`Functional Component`</b>. We can create classbased components with the help of class keyword and extends React.Component and React.component comes from react.
+  syntax :
 
-whenever create any hook always make new file and file name start with use
+```js
+ class {className} extends React.Component
+```
 
-### useState Returns >> target
+- most important part of the classbased component is @Render Method it help to return some JSX code just like functional component.
+- componentDidMount is the method in the classbased component which is the best place to call the API and it will be call after first render
 
-there is one event listner call Online which help to show the user is offline or not
-and is u use any event listner u must need to clean all the event listner because if u use another listner and then back to that normal listner then the new event listner is being call so use "Unmounting"
+### Constructor >> Render >> componentDidMount
 
-<h2> Q: How many JS /JSX file parcel produce?</h2>
-A: Only one
+- componentDidUpdate it will call after every next render.
+- componentWillUnmount use for "cleanUp"
 
-### One one js file created by bundle but it is bigger projects and has more than 100 components then one-bundle break ur code
+### ----------------------------------------------------------------
 
-so u have to splitting the code or make it in small chunks or "OnDemand Loading"
+### Building your Own Hooks
 
-JUst like useState react also give us lazy which is help for lazy loading it take a function and useful for dynamic import or lazy import
-and it is use to create another bundler which help for code chunking
-Syntax:
-const VARNAME = lazy( ( ) => import("Relative Path") )
+- it is use for useablability, readablelity, easy to maintain
+- whenever create any hook always make new file and file name start with use
 
-react will try to render the things which is not in there so it gives an error so it will suspend the operation
+#### useState Returns >> target
 
-### When u r loading the component on demand react try to sunspend it
+- there is one event listener call Online which help to show the user is offline or not
+  and is u use any event listener u must need to clean all the event listener because if u use another listener and then back to that normal listener then the new event listener is being call so use "Unmounting"
 
-Upon OnDemand LOading -> Upon Render -> Suspend Loading
-So to avoid the error it uses another component call suspense component and put another component in between
-and if the component take long time to load into the app then suspense use props called fallback
+#### Q: How many JS /JSX file parcel produce?
+
+- Only one
+
+#### One one js file created by bundle but it is bigger projects and has more than 100 components then one-bundle break ur code
+
+- so u have to splitting the code or make it in small chunks or <b>`"OnDemand Loading"`</b>
+
+- Just like useState react also give us lazy which is help for lazy loading it take a function and useful for dynamic import or lazy import and it is use to create another bundler which help for code chunking
+  Syntax:
+
+  ```js
+  const VARNAME = lazy(() => import("Relative Path"));
+  ```
+
+- react will try to render the things which is not in there so it gives an error so it will suspend the operation
+
+### When u r loading the component on demand react try to suspend it
+
+- Upon OnDemand Loading -> Upon Render -> Suspend Loading
+  - So to avoid the error it uses another component call <b>`suspense component`</b> and put another component in between
+    and if the component take long time to load into the app then suspense use props called fallback
+
 Syntax :
 
 ```js
-
 < Suspense fallback={< Shimmer />}> < Instamart /> < Suspense/>
 ```
 
@@ -287,7 +281,7 @@ Syntax :
 
 ### Q: Why we Use Frameworks
 
-A: 1. to Write optimized css, 2. it saves time
+- 1. to Write optimized css, 2. it saves time
 
 [Tailwind Cheatsheet](https://nerdcave.com/tailwind-cheat-sheet)
 
@@ -341,23 +335,24 @@ A: 1. to Write optimized css, 2. it saves time
 - less bundle size (minimal css) only includes the css classes that we have used
 - Flexible UI (Customizable)
 
-  PROS: Easy to use, More Reuseablitit, code is less, no duplicate css, fast time, easy to debug
-  CONS: Heavy Bundle Size
+##### PROS: Easy to use, More Reuseablitit, code is less, no duplicate css, fast time, easy to debug
+
+##### CONS: Heavy Bundle Size
 
 It's comes with some predefined configuration and same need to configure in project. Different Framework or library have it's own configuration like parcels and Angular comes with difference configuration. For Detailed knowladge follow the tailwind documentation.
 
-how to put Tailwind
-using cdn links in index.js file
+##### how to put Tailwind
 
-Install Tailwindcss Using Parcel
-npm install -D tailwindcss postcss
-npx tailwindcss init >> it make tailwind.config.js
+- using cdn links in index.js file
+- Install Tailwindcss Using Parcel
+  - npm install -D tailwindcss postcss
+  - npx tailwindcss init >> it make tailwind.config.js
 
 In the tailwind.config.js file "content" array is use so that tailwind know that only these extension file be executed
 
 ### postcssrc we have to create so that our bundler know that we use tailwind css so it can compile
 
-In short 'it compile Tailwind Css into normal css'
+- In short it compile Tailwind Css into normal css
 
 when we write tailwind css we dont write any css in css file just write
 @tailwind base;
@@ -366,73 +361,74 @@ when we write tailwind css we dont write any css in css file just write
 
 use extension tailwindcss intellisense
 
-use [] =>Square bracet notesion for the precious or exact value or dynamic value
-example: w-[200px]
+- use [] => Square bracet notesion for the precious or exact value or dynamic value
+  - example: w-[200px]
 
 ### ------------------------------------------------------------------------
 
 <div align="center"> <h2> Data is the New Oil</h2> </div>
 
-UI Layer < Data Layer (UI Layer | Data Layer)
+### UI Layer < Data Layer (UI Layer | Data Layer)
 
-### Q: In UI what does data layer consist of ?
+#### Q: In UI what does data layer consist of ?
 
-A:It Manges by State and props
+- It Manges by State and props
 
-### Q: Diffrence Between State And Props ?
+#### Q: Diffrence Between State And Props ?
 
-    A: State can be change where Props cannot be change
-        State which in the local variable
-        Props are somethings whoes value can be pass from one element component to the another
-        Props are kind of local state variable to the parent component
-        # Props is something which is recieving inside the component
+- State can be change where Props cannot be change
+- State which in the local variable
+- Props are somethings who's value can be pass from one element component to the another
+- Props are kind of local state variable to the parent component
+- Props is something which is recieving inside the component
 
-### PROPS DRILLING => drilling props from top to bottom level
+#### PROPS DRILLING => drilling props from top to bottom level
 
-React dev tools extension in chrome
-showing whole tree in chrome
+**Accessing parents property into child is called PROPS Drilling and we can access child property by using custom hooks**
 
-accessing parents property into child is called PROPS Drilling
-and we can access child property by using custom hooks
+- React dev tools extension in chrome
+- showing whole tree in chrome
 
-### useContext is the normal hook
+#### useContext is the normal hook
 
-### React context is use for piece of data use anywhere in the app and it is normal function
+#### React context is use for piece of data use anywhere in the app and it is normal function
 
-u can create multiple context in the app
+- u can create multiple context in the app
 
-Props And state are tied to the compoent but React Context is not tied to the component
+#### Props And state are tied to the component but React Context is not tied to the component
 
+```js
 <UserContext.Consumer>
 <UserContext.Provider>
+```
 
-### React routing also done with the help of context
+#### React routing also done with the help of context
 
-#only for debugging
-Writing a name to the context provider is good and remove the comfusion if had more context in the app so use
-put the .displayName method
-ex: userConetxt.displayName = "Name_Which_want_to_display";
+##### Only for debugging
 
-### We use Contex to avoid Prop Drilling
+- Writing a name to the context provider is good and remove the confusion if had more context in the app so use or put the
+  .displayName method
+  - ex: userConetxt.displayName = "Name_Which_want_to_display";
 
-Asume Contex like a outer garage where u store cars and can be use
+#### We use Contex to avoid Prop Drilling
 
-### Any component of ur app can be access and can be modify the context
+      - Assume Contex like a outer garage where u store cars and can be use.
 
-ex : theme (dark and light)
+#### Any component of ur app can be access and can be modify the context
+
+      - ex : theme (dark and light)
 
 ### ------------------------------------------------------------------------
 
 <div align="center"> <h2>  Lets Build our Store</h2> </div>
 
-### Redux
+# Redux
 
-It help to manage Data Layer of our Application
-It burden to use context for the large scalable app so Redux come into the picture
+- It help to manage Data Layer of our Application.
+- It burden to use context for the large scalable app so Redux come into the picture.
+- When u use to build small app then context u have to use otherwise redux
 
-When u use to build small app then context u have to use otherwise redux
-
-### It is complicated library so it come with REDUX TOOLKIT
+#### It is complicated library so it come with REDUX TOOLKIT
 
 ## Theory:
 
@@ -572,44 +568,43 @@ Finally, the code `exports` the `reducer` for the slice using the reducer proper
 </details>
 <!-- *******************************-->
 
-redux store is nothing but the big Object which has small section
+### Redux store is nothing but the big Object which has small section
 
-@Dispatch
-@Slicer
-@Reducer
-@Selector `Subscribing`
+- @Dispatch
+- @Slicer
+- @Reducer
+- @Selector `Subscribing`
 
-if u click on the + button of the store it will dispatches an action which calls reducer function which update slice of redux store
+**If u click on the + button of the store It will dispatches an action which calls Reducer function which update slice of redux store**
 
 - Button >>Dispatching Action >> Reducer function >> Slice redux store >> Selector
-
-When we click on Add Button, we dispatch an action, which calls a reducer function, which updates the slice of the store & for reading data, we subscribe the store. Then, it automagically updates.
+  - When we click on Add Button, we dispatch an action, which calls a reducer function, which updates the slice of the store & for reading data, we subscribe the store. Then, it automagically updates.
 
 <p><img  width="900" height="400" src="12.png"></p>
 
-Selector is Hook
+- npm i @reduxjs/toolkit >> To install the Redux Library >> It is the core of redux
+- npm i react-redux >> It is bridge between react and redux
 
-npm i @reduxjs/toolkit >> to install the Redux Library >> It is the core of redux
-npm i react-redux >> it is bridge between react and redux
+##### configureStore()
 
-configureStore()
+##### provider help to connect the store with app
 
-provider help to connect the store with app
-createSlice
+##### createSlice
 
-createSlice
-name
-initialState
-reducers
-addItem
-clearCart
-Reducer contain Mapping of action and reducer function
+- name
+- initialState
+- reducers
+- addItem
+- clearCart
+- Reducer contain Mapping of action and reducer function
 
-### useSelector hook is very good hook it will directly give access to the store It is help to SUBSCRIBE
+#### useSelector hook is very good hook it will directly give access to the store It is help to SUBSCRIBE
 
-Subscribing to the specific store
+- Subscribing to the specific store
 
-useDispacth come from react-redux
+#### useDispacth come from react-redux
+
+- help to perform an action
 
 ## Redux === context
 
@@ -618,66 +613,68 @@ Redux devtool Extension IMP if u work in redux
 ### ------------------------------------------------------------------------
 
 <div align="center"> <h2>Time for test</h2> </div>
-
-How to test ur react application
+- How to test ur react application
 
 ### React Testing Library
 
-### Q: Why we need Test Cases ?
+#### Q: Why we need Test Cases ?
 
-A: To check the performace of code
-1.Adding new functionality will not break existing functionality
+- To check the performace of code
+  - 1.Adding new functionality will not break existing functionality
 
-@ Test Driven Development
+#### Test Driven Development
 
-### JEST = Javascript Testing Framework
+#### JEST = Javascript Testing Framework
 
-### jest find the test cases writtin in the file
+#### jest find the test cases written in the file
 
-Install Testing Library
-npm i --save-dev @testing-library/react
-npm i -D jest
-configure jest by creating jest.config file
--> npx jest --init
-npm run jest
-npm i -D jest-environment-jsdom
-Create my first test - create ne folder with the name "** tests**"
-naming convention for writing the test cases with ".test.js"
-Configure jest with babel
--> npm install --save-dev babel-jest @babel/core @babel/preset-env  
- -[JEST Configure doc](https://jestjs.io/docs/getting-started#using-babel)
-Write some text cases
-then npm run test
--gitignore Coverage report
+**Install Testing Library**
 
-.babelrc >> require JSON data not JS file data
+- npm i --save-dev @testing-library/react
+- npm i -D jest
+- configure jest by creating jest.config file
+- npx jest --init
+- npm run jest
+- npm i -D jest-environment-jsdom
+- Create my first test
+  - create new folder with the name **tests**
+    naming convention for writing the test cases with ".test.js"
+    Configure jest with babel
+- npm install --save-dev babel-jest @babel/core @babel/preset-env  
+   -[JEST Configure doc](https://jestjs.io/docs/getting-started#using-babel)
+- Write some test cases
+- then npm run test
+- gitignore Coverage report
 
-we r not running testcases into the browser we write test case to run on jsdom
-JSDOM is the mini Browser(some functionality)
+**.babelrc >> require JSON data not JS file data**
 
-render use in the .test.js file help to load perticual portion and we write just like we like for the whole app
-this library comes form the @testing-library/react
+-we r not running testcases into the browser we write test case to run on jsdom
 
-Install npm i -D @babel/preset-react
-JEST does not understand jsx so to understand write
-["@babel/preset-react",{"runtime" : "automatic"}] in babelrc file it help JEST to read JSX
+##### JSDOM is the mini Browser(some functionality)
 
-jest doesnot able to read png file so in jest config file moduleNameMapper will help
+- render use in the .test.js file help to load perticual portion and we write just like we like for the whole app
+  this library comes form the @testing-library/react
 
-staticRouter comes from reacr-router-dom/server
+- Install npm i -D @babel/preset-react
 
-data-testid
-@getAllByTestId
+  - JEST does not understand jsx so to understand write
+    - ["@babel/preset-react",{"runtime" : "automatic"}] in babelrc file it help JEST to read JSX
 
-fetch is not understand by the jest use
-global.fetch = jest.fn()
+- jest doesnot able to read png file so in jest config file moduleNameMapper will help
 
-expect().toBe
+- staticRouter comes from reacr-router-dom/server
 
-### watch-test : "jest --watch" Help not to write again an again like HMR
+- data-testid
+  `@getAllByTestId`
 
-Install
-npm i -D @testing-library/jest-dom
+- fetch is not understand by the jest use
+  `global.fetch = jest.fn()`
+
+- expect().toBe
+
+#### watch-test : "jest --watch" Help not to write again an again like HMR
+
+- Install `npm i -D @testing-library/jest-dom`
 
 ### ------------------------------------------------------------------------
 
@@ -701,6 +698,11 @@ npx tailwind init create tailwind config file
 
 ### ------------------------------------------------------------------------
 
+ChatGPT
+It seems you provided information about testing React applications using React Testing Library and discussed best practices for machine code
+
+User
+
 <div align="center"> <h2> Building Advanced Youtube</h2> </div>
 
 ### Higher Order Component => It takes existing Component and modifty little
@@ -720,33 +722,27 @@ export const HocComponents = (NormalComponent) => {
 };
 ```
 
-and then from where it call just imprt there and then store in the new cost varible then
+- and then from where it call just import there and then store in the new cost variable then
 
 ```js
-
 const  NewVar = HocComponents(NormalComponent)
-
-//  and use whereever u wanted
-
+//  and use where ever u wanted
 <NewVar Data ={sendingDataAsProp}>
-
-
 ```
 
 ### Debouncing => It is the concept that to find the Diffrence between the two key strokes
 
-Quick hack if want to check the api working or not check in browsers console
-ex : fetch("API_CALL")
+- Quick hack if want to check the api working or not check in browsers console
 
-N-Level Nested Comments
+  - ex : fetch("API_CALL")
+
+- N-Level Nested Comments
 
 ### ------------------------------------------------------------------------
 
-```js
 <div align="center">
-  <h2>The End Game => Live Chat</h2>{" "}
+  <h2>The End Game => Live Chat</h2>
 </div>
-```
 
 ### Topics Coverd:-
 
@@ -777,7 +773,7 @@ While creating `youtube clone` covered:
 
 #### UseCallback -> `Cache the Function`
 
-#### UseRef -> `Let refrence a Value that's not needd to Rerendering` Update the Value but not want to rerender `Return Object`
+#### UseRef -> `Let refrence a Value that's not needd to Rerendering` Update the Value but not want to Rerender `Return Object`
 
 #### Normal Var VS State Variable -> Normal Varibale not render the page but state can and Normal Variable can be start from the start if give pause for while but state will resume from the previous value and if we dont want to reset the value set in normal Var then use UseRef it will resume
 
@@ -1027,35 +1023,35 @@ what a coroutine is and how it can be used to implement features like context an
 
 ## useCallback
 
-if the dependencies of useCallback changes or might possibly changes then it optimises that perticular methods only
-On the initial render, useCallback returns the fn function you have passed.
-During subsequent renders, it will either return an already stored fn function from the last render (if the dependencies haven’t changed), or return the fn function you have passed during this render.
-fn: The function value that you want to cache. It can take any arguments and return any values. React will return (not call!) your function back to you during the initial render. On next renders, React will give you the same function again if the dependencies have not changed since the last render. Otherwise, it will give you the function that you have passed during the current render, and store it in case it can be reused later. React will not call your function. The function is returned to you so you can decide when and whether to call it.
-useCallback is use to Caches your function itself.
-You should only rely on useCallback as a performance optimization. If your code doesn’t work without it, find the underlying problem and fix it first. Then you may add useCallback back.
-useCallback is useful when you’re trying to optimize a child component. They let you memoize (or, in other words, cache) something you’re passing down:
-Instead, it caches the function you provided so that function itself doesn’t change unless Dependencies or referrer has changed. This lets you pass the function down without unnecessarily re-rendering
+- if the dependencies of useCallback changes or might possibly changes then it optimises that perticular methods only
+  On the initial render, useCallback returns the fn function you have passed.
+  - During subsequent renders, it will either return an already stored fn function from the last render (if the dependencies haven’t changed), or return the fn function you have passed during this render.
+  - fn: The function value that you want to cache. It can take any arguments and return any values. React will return (not call!) your function back to you during the initial render. On next renders, React will give you the same function again if the dependencies have not changed since the last render. Otherwise, it will give you the function that you have passed during the current render, and store it in case it can be reused later. React will not call your function. The function is returned to you so you can decide when and whether to call it.
+- useCallback is use to Caches your function itself.
+- You should only rely on useCallback as a performance optimization. If your code doesn’t work without it, find the underlying problem and fix it first. Then you may add useCallback back.
+- useCallback is useful when you’re trying to optimize a child component. They let you memoize (or, in other words, cache) something you’re passing down:
+- Instead, it caches the function you provided so that function itself doesn’t change unless Dependencies or referrer has changed. This lets you pass the function down without unnecessarily re-rendering
 
-you can make a lot of memoization unnecessary by following a few principles:
+- you can make a lot of memoization unnecessary by following a few principles:
 
-1.When a component visually wraps other components, let it accept JSX as children. Then, if the wrapper component updates its own state, React knows that its children don’t need to re-render.
-2.Prefer local state and don’t lift state up any further than necessary. Don’t keep transient state like forms and whether an item is hovered at the top of your tree or in a global state library.
-3.Keep your rendering logic pure. If re-rendering a component causes a problem or produces some noticeable visual artifact, it’s a bug in your component! Fix the bug instead of adding memoization.
-4.Avoid unnecessary Effects that update state. Most performance problems in React apps are caused by chains of updates originating from Effects that cause your components to render over and over.
-5.Try to remove unnecessary dependencies from your Effects. For example, instead of memoization, it’s often simpler to move some object or a function inside an Effect or outside the component.
+- 1.When a component visually wraps other components, let it accept JSX as children. Then, if the wrapper component updates its own state, React knows that its children don’t need to re-render.
+- 2.Prefer local state and don’t lift state up any further than necessary. Don’t keep transient state like forms and whether an item is hovered at the top of your tree or in a global state library.
+- 3.Keep your rendering logic pure. If re-rendering a component causes a problem or produces some noticeable visual artifact, it’s a bug in your component! Fix the bug instead of adding memoization.
+- 4.Avoid unnecessary Effects that update state. Most performance problems in React apps are caused by chains of updates originating from Effects that cause your components to render over and over.
+- 5.Try to remove unnecessary dependencies from your Effects. For example, instead of memoization, it’s often simpler to move some object or a function inside an Effect or outside the component.
 
 ## useRef
 
-kisibhi chiz ka refrence lena hota hai tab useRef call krrte hai
+**kisibhi chiz ka refrence lena hota hai tab useRef call krrte hai**
 
 ## useId
 
-useId is a React Hook for generating unique IDs that can be passed to accessibility attributes.
-Do not call useId to generate keys in a list. Keys should be generated from your data.
+- useId is a React Hook for generating unique IDs that can be passed to accessibility attributes.
+- Do not call useId to generate keys in a list. Keys should be generated from your data.
 
 ## useState
 
-Jab UI me kuch reflect krna raha tab use krte hai
+**Jab UI me kuch reflect krna raha tab use krte hai**
 
 ## useParams is use to get parameters from url
 
@@ -1065,11 +1061,14 @@ const {userid} = useParams()
 
 ## React Router
 
-link use in place of <a> tag
-<NavLink> provide additional info
-if u ra going to another page and want to change the header style then in the className use callback and there is isActive and this NavLink tell us that the page u r on is active or not
-className = {({isActive}) =>{ }}
+- `Link` use in place of `<a>` tag `<NavLink>` provide additional info
 
+- if u r going to another page and want to change the header style then in the className use callback and there is `isActive` and this NavLink tell us that the page u r on is active or not
+  ```js
+  className = {({isActive}) =>{ }}
+  ```
+
+```js
 it has similar syntax as Link <NavLink
 to="/"
 className={({isActive}) =>
@@ -1077,6 +1076,9 @@ className={({isActive}) =>
 } >
 Home
 </NavLink>
+```
+
+#### createBrowserRouter
 
 ```js
 const router = createBrowserRouter([
@@ -1113,36 +1115,38 @@ const router = createBrowserRouter(
 );
 ```
 
-above are the two different way to create route
-and createRoutesFromElements( ) this is imp
+- above are the two different way to create route and createRoutesFromElements( ) this is imp
 
-createBrowserRouter u can use the loader it help to cache while the data while hovering to that element u can also call the api from the loader it call apis before useEffect
-useLoaderData()
+- createBrowserRouter u can use the loader it help to cache while the data while hovering to that element u can also call the api from the `loader` it call apis before useEffect
+- `useLoaderData()`
 
-diffrence between js and jsx i.e if u need to retun jsx then write jsx otherwise js is ok
-Prop drillng is something that goes from parent to child via Props is called prop drillng
-Prop drilling refers to the process of passing down props from a parent component to a deeply nested child component through intermediate components.
+##### **diffrence between js and jsx i.e if u need to retun jsx then write jsx otherwise js is ok**
 
-useContext()
-useContext() always looks for the closest provider above the component that calls it. It searches upwards and does not consider providers in the component from which you’re calling useContext()
+- Prop drillng is something that goes from parent to child via Props is called prop drillng
+- Prop drilling refers to the process of passing down props from a parent component to a deeply nested child component through intermediate components.
 
-createContext()
-U CAN PASS THE INITIAL VALUE AS WELL
+#### useContext()
 
-and wrap with the createContext()
+- useContext() always looks for the closest provider above the component that calls it. It searches upwards and does not consider providers in the component from which you’re calling useContext()
 
-we have to create provider to prove data so that we need to wrap with the
+#### createContext()
+
+- U CAN PASS THE INITIAL VALUE AS WELL
+- and wrap with the createContext()
+
+- we have to create provider to prove data so that we need to wrap with the
 
 ```js
  <createContext().Provider  values={props}>
 </createContext().Provider >
 ```
 
-then export from that file and use to wrap this component in main file
+- then export from that file and use to wrap this component in main file
 
-so to access the data we have to use useContext() hook and in that hook we have to pass the createContext() value;
-i.e useContext(userContext())
-and where the useConext hook use then use these file where it was provider i.e main file
+- so to access the data we have to use `useContext()` hook and in that hook we have to pass the `createContext()` value;
+  - i.e useContext(userContext())
+- and where the useConext hook use then use these file where it was provider
+  -i.e main file
 
 ```js
 import { createContext, useContext } from "react";
@@ -1160,33 +1164,34 @@ export default function useTheme() {
 }
 ```
 
-while writing in create context we can create empty function we donot write anything in funtion
+- while writing in create context we can create empty function we donot write anything in funtion
 
-loacal stoarage has only 2 method
-The localStorage object allows you to save key/value pairs in the browser.
-localStorage.setItem("lastname", "Smith");
-localStorage.getItem("lastname");
+##### local storage has only 2 method
 
-we have to convert into JSON
+- The localStorage object allows you to save key/value pairs in the browser.
+- localStorage.setItem("lastname", "Smith");
+- localStorage.getItem("lastname");
+- we have to convert into JSON
 
 ## Redux Toolkit
 
-configureStore(): wraps createStore to provide simplified configuration options and good defaults. It can automatically combine your slice reducers, adds whatever Redux middleware you supply, includes redux-thunk by default, and enables use of the Redux DevTools Extension.
-createSlice(): accepts an object of reducer functions, a slice name, and an initial state value, and automatically generates a slice reducer with corresponding action creators and action types.
+- `configureStore()`: wraps createStore to provide simplified configuration options and good defaults. It can automatically combine your slice reducers, adds whatever Redux middleware you supply, includes redux-thunk by default, and enables use of the Redux DevTools Extension.
+- `createSlice()`: accepts an object of reducer functions, a slice name, and an initial state value, and automatically generates a slice reducer with corresponding action creators and action types.
 
-in reducers we provide properties or function
-and in that function we have state and action if parenthesis
-state give initial state called state (current state)
-action ke andar jo bhi action perform krna hai
-action.payload
+- in reducers we provide properties or function
 
-here we provide store as props while in context api we provider values as prop
+  - and in that function we have state and action if parentheses
+  - state give initial state called state (current state)
+  - action ke andar jo bhi action perform krna hai
+    `action.payload`
 
-har applications ka single store hota hai
+- **_here we `provide store as props` while in context api we provider values as prop_**
 
-import.meta.env.VITE\_(name of the env var)
+- har applications ka single store hota hai
 
-This is importtant to search any values from table
+### import.meta.env.VITE\_(name of the env var)
+
+- This is important to search any values from table
 
 ```js
 const handleSearch = () => {
@@ -1204,7 +1209,7 @@ const handleSearch = () => {
 };
 ```
 
-If u want to disaplay only which is in the state varibale of filteredData then u use dynamica data and that data can be created by following methods:
+If u want to disaplay only which is in the state variable of filteredData then u use dynamica data and that data can be created by following methods:
 this is use to help to show data dynamically from filered data
 
 ```js
@@ -1224,11 +1229,12 @@ this is use to help to show data dynamically from filered data
 }
 ```
 
-anchor tag made an network request or call while Link doesnot made any requests to an server it
-Link tag is use as a client side routing
-while anchor tag is used as a server side routing
+**_Anchor tag made an network request or call while Link doesnot made any requests to an server it_**
 
-if u want to access the any property in class then u have top use "this" keyword
+- Link tag is use as a client side routing
+- while anchor tag is used as a server side routing
+
+if u want to access the any property in class then u have top use `"this"` keyword
 
 #### After the Render useEffect is called and render means whole body will be render
 
@@ -1251,19 +1257,19 @@ if u want to access the any property in class then u have top use "this" keyword
 <p><img  width="900" height="400" src="LifeCycle Method.png"></p>
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
-# Signle Responsibilities component
+# Single Responsibilities component
 
 - Individual component can display individual components
 
-## If u r using custom hooks u have to return the state variable & before writing the custom hooks analysis what will be returned & what will be input
+#### If u r using custom hooks u have to return the state variable & before writing the custom hooks analysis what will be returned & what will be input
 
-# U can export multiple Functional components
+## U can export multiple Functional components
 
 ```js
 export { Component1, Component2,... ComponentN}
 ```
 
-## Controlled component and Uncontrolled component
+## #Controlled component and Uncontrolled component
 
 - If the child components manages it own state is called uncontrolled component & parent component controlled the child components state is called controlled component
 
