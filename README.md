@@ -1269,7 +1269,7 @@ https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 export { Component1, Component2,... ComponentN}
 ```
 
-## #Controlled component and Uncontrolled component
+### Controlled component and Uncontrolled component
 
 - If the child components manages it own state is called uncontrolled component & parent component controlled the child components state is called controlled component
 
