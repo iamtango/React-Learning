@@ -1311,7 +1311,7 @@ export default cartSlice.reducer
 ```
 
 ```js
-useSelector((Store) => store.cart(configureStore Reducers Name).items(Name ot Initial state))
+useSelector((Store) => store.cart(configureStore Reducers Name).items(Name ot nitial state))
 ```
 
 - to dispatch an action use useDispatch
@@ -1319,5 +1319,7 @@ useSelector((Store) => store.cart(configureStore Reducers Name).items(Name ot In
 - we need to add the provider aswell and pass the store as prop
 
 <p><img  width="900" height="400" src="Context_Vs_Redux.jpg"></p>
+
+#### Context API prompts a re-render on each update of the state and re-renders all components regardless. Redux however, only re-renders the updated components.
 
 ### useNavigate is hook provided by the react router dom which help to navigate through the URL
