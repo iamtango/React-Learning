@@ -1323,3 +1323,31 @@ useSelector((Store) => store.cart(configureStore Reducers Name).items(Name ot ni
 #### Context API prompts a re-render on each update of the state and re-renders all components regardless. Redux however, only re-renders the updated components.
 
 ### useNavigate is hook provided by the react router dom which help to navigate through the URL
+
+
+### if you use new FormData() then we have to assure to use name prop in input field or select
+### crypto.randomUUID() is to generate random uuid
+### one way data binding is something that only the data can able to change the ui but changes is ui can't able to change the data we have to set manually so that it can change
+### if u use useRef() and set ref prop to any element then it give reference to that particular node
+### createPortal() from react-dom 
+### configureStore() have reducers as well as middleware and it is array, middleware is an currying function which has 3 params store next and action
+
+### createSelector() in redux
+
+- The createSelector function from the reselect library is used to create memoized selectors, which can compute derived state efficiently.
+- This is particularly useful when working with Redux, as it helps avoid unnecessary re-renders by only recomputing the derived state when its dependencies change.
+
+### Redux thunk middleware
+
+- Redux Thunk is a middleware that allows you to write action creators that return a function instead of an action.
+- This is useful for handling asynchronous logic in Redux.
+
+### ExtraReducer
+
+- In Redux Toolkit, extraReducers is used to handle actions defined outside the createSlice function, such as actions from other slices or external actions.
+
+```js
+extrareducers: (builder) => {
+  builder.addCase();
+};
+```
