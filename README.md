@@ -1351,3 +1351,22 @@ extrareducers: (builder) => {
   builder.addCase();
 };
 ```
+
+### React.memo()
+
+- React.memo is a higher-order component that can be used to optimize functional components.
+- It is a way of memoizing the component itself.
+- When you wrap a component with React.memo, it will only re-render if its props change.
+- This can help prevent unnecessary re-renders, which can improve performance in certain scenarios.
+- the major differences between React.memo() and useMemo():
+  - Purpose:
+    - React.memo is used to prevent re-rendering of a component if its props haven't changed.
+    - useMemo is used to memoize a calculated value to avoid expensive calculations on every render.
+  - Usage:
+    - React.memo wraps a component to memoize it.
+    - useMemo is used within a component to memoize a value.
+  - When to Use:
+    - Use React.memo when you have a functional component that doesn't need to re-render unless its props change.
+    - Use useMemo when you have an expensive calculation or operation that you don't want to perform on every render unless its dependencies change.
+
+##### While memoization might seem like a neat little trick to use everywhere, you should use it only when you absolutely need those performance gains. Memoization uses up memory space on the machine it’s being run on and, as such, may lead to unintended effects.
