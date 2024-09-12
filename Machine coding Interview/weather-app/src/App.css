@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  padding: 50px;
+}
+
+.city-name{
+  background-color: lightcoral;
+  padding: 20px;
+  border-radius: 5px;
+}
+.description{
+  background-color: pink;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px;
+}

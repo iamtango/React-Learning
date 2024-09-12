@@ -1,0 +1,33 @@
+.componentContainer{
+    margin: 40px;
+    width: 25%;
+}
+
+.popoverContainer{
+    border: 1px solid gray;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+.popoverHeader{
+    background-color: lightgray;
+    padding: 5px 0px 5px 5px;
+}
+
+.popoverBody{
+    padding: 10px 5px 10px 5px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid gray;
+    position: absolute;
+    top: -10px;
+    left: 20px; 
+}
+  
