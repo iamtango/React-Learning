@@ -698,11 +698,6 @@ npx tailwind init create tailwind config file
 
 ### ------------------------------------------------------------------------
 
-ChatGPT
-It seems you provided information about testing React applications using React Testing Library and discussed best practices for machine code
-
-User
-
 <div align="center"> <h2> Building Advanced Youtube</h2> </div>
 
 ### Higher Order Component => It takes existing Component and modifty little
