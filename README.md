@@ -694,7 +694,7 @@ Redux devtool Extension IMP if u work in redux
 
 npx tailwind init create tailwind config file
 
-### racfe
+### rafce
 
 ### ------------------------------------------------------------------------
 
